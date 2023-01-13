@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="added assignment 1">
+      <change afterPath="$PROJECT_DIR$/src/Lab01/DiffUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab01/DiffUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS2420 Assignments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS2420 Assignments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/GrayscaleImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/GrayscaleImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KBV4050iWIgwv1EedGxRy09oCT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,12 +38,76 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "/home/vnilabean/IdeaProjects/CS2420 Assignments/src/Lab01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Lab01" />
+      <recent name="$PROJECT_DIR$/src/Assignment1" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Lab01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DiffUtilTest">
+    <configuration name="DiffUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab01" />
+      <option name="MAIN_CLASS_NAME" value="Lab01.DiffUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiffUtilTest.testNegAndPos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab01" />
+      <option name="MAIN_CLASS_NAME" value="Lab01.DiffUtilTest" />
+      <option name="METHOD_NAME" value="testNegAndPos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DiffUtilTest" />
+        <item itemvalue="JUnit.DiffUtilTest.testNegAndPos" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,7 +116,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673447767797</updated>
+      <workItem from="1673447768853" duration="1649000" />
+      <workItem from="1673449530860" duration="5550000" />
     </task>
+    <task id="LOCAL-00001" summary="added assignment 1">
+      <created>1673448534373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673448534373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added assignment 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added assignment 1" />
   </component>
 </project>
