@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Stack;
 
 
 /**
@@ -89,8 +90,12 @@ public class GrayscaleImage {
      * @throws IllegalArgumentException if x, y are not within the image width/height
      */
     public double getPixel(int x, int y){
-        //STUDENT Fill in this in to work correctly
-       return Double.NaN;
+        if (imageData.length > x && imageData[0].length > y) {
+            return imageData[y][x];
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
     }
 
     /**
@@ -107,8 +112,17 @@ public class GrayscaleImage {
 
         GrayscaleImage otherImage = (GrayscaleImage)other;
 
-        //STUDENT: implement equals to return true only when all pixels are exactly equal
-        return this == otherImage; //<-- This is an incorrect implementation!
+        for (int i = 0;i<imageData.length ; i++) {
+            for (int j=0;j<imageData[0].length;j++) {
+               double item1 = this.getPixel(i,j);
+                double item2 = otherImage.getPixel(i,j);
+                if (item1 != item2) {
+                    return false;
+                }
+
+            }
+        }
+        return true;
     }
 
 
@@ -117,8 +131,15 @@ public class GrayscaleImage {
      * @return the average of the imageData array
      */
     public double averageBrightness(){
-        //STUDENT FILL ME IN WITH A CORRECT IMPLEMENTATION
-        return Double.NaN;
+        int count = 0;
+        double pixelTotal = 0;
+        for (int i = 0;i<imageData.length; i++) {
+            for (int j=0;j<imageData[0].length;j++) {
+            pixelTotal += this.getPixel(i,j);
+            count++;
+            }
+            }
+        return pixelTotal/count;
     }
 
     /**
@@ -129,8 +150,16 @@ public class GrayscaleImage {
      * @return a GrayScale image with pixel data uniformly rescaled so that its averageBrightness() is 127
      */
     public GrayscaleImage normalized(){
-        //STUDENT FILL ME IN WITH A CORRECT IMPLEMENTATION
-        return null;
+        GrayscaleImage normalizedSquare = new GrayscaleImage(new double[imageData.length][imageData[0].length]);
+        double originalAverage = this.averageBrightness();
+        double multiplier = 127/originalAverage;
+        for (int i = 0;i<imageData.length; i++) {
+            for (int j=0;j<imageData[0].length;j++) {
+                normalizedSquare.imageData[j][i] = getPixel(i,j) * multiplier;
+
+            }
+        }
+        return normalizedSquare;
     }
 
 
@@ -141,8 +170,23 @@ public class GrayscaleImage {
      * @return a new GrayscaleImage that is a mirrored version of the this
      */
     public GrayscaleImage mirrored(){
-        //STUDENT: FILL ME IN WITH A CORRECT IMPLEMENTATION
-        return null;
+        GrayscaleImage mirroredSquare = new GrayscaleImage(new double[imageData.length][imageData[0].length]);
+            int col = 0;
+        Stack<Double> temp = new Stack<>();
+            for (int j=0;j<imageData.length;j++) {
+                for (int i = 0;i< imageData[0].length;i++) {
+                    temp.push(getPixel(i,j));
+                }
+                while(!temp.isEmpty()) {
+                    for (int i = 0;i < imageData[0].length;i++) {
+                        mirroredSquare.imageData[j][i] = temp.pop();
+                    }
+                }
+            }
+
+
+
+        return mirroredSquare;
     }
 
     /**
@@ -157,8 +201,16 @@ public class GrayscaleImage {
      * @throws IllegalArgumentException if the specified rectangle goes outside the bounds of the original image
      */
     public GrayscaleImage cropped(int startRow, int startCol, int width, int height){
-        //STUDENT: FILL ME IN
-        return null;
+        GrayscaleImage croppedSquare = new GrayscaleImage(new double[height][width]);
+        if (startRow + height > imageData.length || startCol + width > imageData[0].length) {
+            throw new IllegalArgumentException();
+        }
+        for (int r = startRow;r<= height;r++) {
+            for (int c = startCol;c<=width;c++) {
+                croppedSquare.imageData[r-1][c-1] = getPixel(r,c);
+            }
+        }
+        return croppedSquare;
     }
 
     /**
