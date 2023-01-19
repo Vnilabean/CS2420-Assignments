@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="added lab1">
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/GrayscaleImageTest.java" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Added methods to GrayscaleImage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/GrayscaleImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/GrayscaleImage.java" afterDir="false" />
     </list>
@@ -70,7 +69,7 @@
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GrayscaleImageTest.cropped">
+  <component name="RunManager" selected="JUnit.GrayscaleImageTest.squarified">
     <configuration name="GrayscaleImageTest.averageBrightness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -135,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrayscaleImageTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrayscaleImageTest.squarified" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +144,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Assignment1" />
       <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="METHOD_NAME" value="squarified" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GrayscaleImageTest.squarified" />
         <item itemvalue="JUnit.GrayscaleImageTest.cropped" />
         <item itemvalue="JUnit.GrayscaleImageTest.mirrored" />
         <item itemvalue="JUnit.GrayscaleImageTest.normalized" />
         <item itemvalue="JUnit.GrayscaleImageTest.averageBrightness" />
-        <item itemvalue="JUnit.GrayscaleImageTest.testEquals" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +170,7 @@
       <updated>1673447767797</updated>
       <workItem from="1673447768853" duration="1649000" />
       <workItem from="1673449530860" duration="11514000" />
-      <workItem from="1673914377911" duration="3694000" />
+      <workItem from="1673914377911" duration="10613000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673633886373</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added methods to GrayscaleImage">
+      <created>1674061358422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674061358423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,17 +213,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added assignment 1" />
     <MESSAGE value="added lab1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Assignment1/GrayscaleImageTest.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added methods to GrayscaleImage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods to GrayscaleImage" />
   </component>
 </project>

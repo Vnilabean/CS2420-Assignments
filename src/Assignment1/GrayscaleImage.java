@@ -202,13 +202,25 @@ public class GrayscaleImage {
      */
     public GrayscaleImage cropped(int startRow, int startCol, int width, int height){
         GrayscaleImage croppedSquare = new GrayscaleImage(new double[height][width]);
-        if (startRow + height > imageData.length || startCol + width > imageData[0].length) {
+        if (height > imageData.length || startCol + width > imageData[0].length) {
             throw new IllegalArgumentException();
         }
-        for (int r = startRow;r<= height;r++) {
-            for (int c = startCol;c<=width;c++) {
-                croppedSquare.imageData[r-1][c-1] = getPixel(r,c);
+        int tx = 0;
+        int ty = 0;
+        for (int r = startCol;r< startCol + height;r++) {
+
+            for (int c = startRow;c< startRow + width;c++) {
+                double original = getPixel(r,c);
+
+                croppedSquare.imageData[tx][ty] = original;
+                tx++;
+
+
+
             }
+            ty++;
+            tx = 0;
+
         }
         return croppedSquare;
     }
@@ -224,8 +236,55 @@ public class GrayscaleImage {
      * @return a new, square, GrayscaleImage
      */
     public GrayscaleImage squarified(){
+        GrayscaleImage squaredSquare = null;
+        int y = imageData.length;
+        int x = imageData[0].length;
+//        if (x < y) {
+//             squaredSquare = new GrayscaleImage(new double[x][x]);
+//        }
+//        else {
+//             squaredSquare = new GrayscaleImage(new double[y][y]);
+//
+//        }
+
+        if (x == y) {
+            return this;
+        }
+
+        if (x > y) {
+            int diff = (x-y);
+            if (diff%2 == 0) {
+                squaredSquare = cropped(1,diff/2,imageData[0].length, imageData.length-1 - (diff/2));
+            }
+            if (diff%2 == 1) {
+               int evenDiff = diff - 1;
+                squaredSquare = cropped(0,(evenDiff/2),imageData[0].length - 1 - (diff/2), imageData.length);
+
+                /**
+                 * use this mehod above this to fox other methods for y>x and diff%2==0
+                 * this is the only method changed from original that is working
+                 */
+
+
+
+
+            }
+        }
+        if (y > x) {
+            int diff = (y-x);
+            if (diff%2 == 0) {
+                squaredSquare = cropped(diff/2,1, imageData[0].length-1-(diff/2), imageData.length );
+            }
+            if (diff%2 == 1){
+                int evenDiff = diff -1;
+                squaredSquare = cropped(diff/2,1, imageData[0].length-2-(diff/2), imageData.length );
+
+            }
+            
+        }
         //STUDENT: FILL ME IN
-        return null;
+
+        return squaredSquare;
     }
 
 
