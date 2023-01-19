@@ -90,7 +90,7 @@ public class GrayscaleImage {
      * @throws IllegalArgumentException if x, y are not within the image width/height
      */
     public double getPixel(int x, int y){
-        if (imageData.length > x && imageData[0].length > y) {
+        if (imageData.length > x && imageData[0].length > y &&y>=0&&x>=0) {
             return imageData[y][x];
         }
         else {
