@@ -119,16 +119,122 @@ class GrayscaleImageTest {
     }
 
     @Test
+    void mirroredMed() {
+        var mirrored = medSquare.mirrored();
+        assertEquals(mirrored.getPixel(5,2),13);
+    }
+
+    @Test
     void cropped() {
         var cropped = smallSquare.cropped(1,1,1,1);
 
         assertEquals(cropped, new GrayscaleImage(new double[][]{{4}}));
+    }
+    @Test
+    void croppedOutOfBoundsStartRowAndCol() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            medSquare.cropped(-1,0,1,2);
+        });
+        assertEquals("java.lang.IllegalArgumentException", exception.toString());
+
+        Exception exception2 = assertThrows(IllegalArgumentException.class, () -> {
+            medSquare.cropped(0,-1,1,2);
+        });
+        assertEquals("java.lang.IllegalArgumentException", exception2.toString());
+    }
+    @Test
+    void croppedOutOfBoundsHeightAndWidth() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            medSquare.cropped(0,0,1,8);
+        });
+        assertEquals("java.lang.IllegalArgumentException", exception.toString());
+
+        Exception exception2 = assertThrows(IllegalArgumentException.class, () -> {
+            medSquare.cropped(0,0,8,1);
+        });
+        assertEquals("java.lang.IllegalArgumentException", exception2.toString());
     }
 
     @Test
     void squarified() {
         var squared = smallWide.squarified();
         var expected = new GrayscaleImage(new double[][]{{1,2},{4,5}});
+        assertEquals(squared, expected);
+    }
+
+    @Test
+    void squarifiedMedSquareAlreadySquare() {
+        var squared = medSquare.squarified();
+        var expected = medSquare;
+        assertEquals(squared, expected);
+    }
+    @Test
+    void squarifiedVeryWideEven() {
+       var medWide = new GrayscaleImage(new double[][]
+                {
+                        {1,2,3,4,5,6,7,8,9,10,11,12},
+                        {13,14,15,16,17,18,19,20,21,22,23,24}
+
+                }
+        );
+        var squared = medWide.squarified();
+        var expected = new GrayscaleImage(new double[][]{{6,7},{18,19}});
+
+        assertEquals(squared, expected);
+    }
+    @Test
+    void squarifiedVeryWideOdd() {
+        var medWide = new GrayscaleImage(new double[][]
+                {
+                        {1,2,3,4,5,6,7,8,9,10,11,12,13},
+                        {13,14,15,16,17,18,19,20,21,22,23,24,14}
+
+                }
+        );
+        var squared = medWide.squarified();
+        var expected = new GrayscaleImage(new double[][]{{6,7},{18,19}});
+
+        assertEquals(squared, expected);
+    }
+
+    @Test
+    void squarifiedVeryTallEven() {
+        var medWide = new GrayscaleImage(new double[][]
+                {
+                        {1,2},
+                        {3,4},
+                        {5,6},
+                        {7,8},
+                        {9,10},
+                        {11,12},
+                        {13,14},
+                        {15,16}
+
+                }
+        );
+        var squared = medWide.squarified();
+        var expected = new GrayscaleImage(new double[][]{{7,8},{9,10}});
+
+        assertEquals(squared, expected);
+    }
+    @Test
+    void squarifiedVeryTallOdd() {
+        var medWide = new GrayscaleImage(new double[][]
+                {
+                        {1,2,3},
+                        {4,5,6},
+                        {7,8,9},
+                        {10,11,12},
+                        {13,14,15},
+                        {16,17,18},
+                        {19,20,21},
+                        {22,23,24}
+
+                }
+        );
+        var squared = medWide.squarified();
+        var expected = new GrayscaleImage(new double[][]{{7,8,9},{10,11,12},{13,14,15}});
+
         assertEquals(squared, expected);
     }
 }
