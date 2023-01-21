@@ -1,4 +1,4 @@
-package Assignment1;
+package assign01;
 
 
 import javax.imageio.ImageIO;

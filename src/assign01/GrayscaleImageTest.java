@@ -1,10 +1,7 @@
-package Assignment1;
+package assign01;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import javax.security.sasl.SaslServer;
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
