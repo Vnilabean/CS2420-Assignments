@@ -11,8 +11,11 @@ public class CS2420Student extends UofUStudent{
     private EmailAddress studentContactInformation;
     private double assignment = 0.0;
     private double exams = 0.0;
+    private int examsCount = 0;
     private double labs = 0.0;
+    private int labsCount = 0;
     private double quizzes = 0.0;
+    private int quizzesCount = 0;
     /**
      * Creates a student from the given first name, last name, and uNID.
      *
@@ -54,7 +57,7 @@ public class CS2420Student extends UofUStudent{
      */
     public double computeFinalScore(){
         if (exams < 65){
-            return 65.0;
+            return exams;
         }
         if (assignment != 0.0 && exams != 0.0 && labs != 0.0 && quizzes != 0.0 ) {
             return 40/assignment + 40/exams + 10/labs + 10/ quizzes;

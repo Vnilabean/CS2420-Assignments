@@ -8,11 +8,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Added methods to GrayscaleImage">
-      <change afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Finished and fix many bugs&#10;added rigorous tests for all methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/UofUStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/UofUStudent.java" afterDir="false" />
+    </list>
+    <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="">
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" afterDir="false" />
     </list>
@@ -32,6 +43,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java">
+      <ranges>
+        <range start1="9" end1="9" start2="9" end2="10" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="14" end1="16" start2="15" end2="17" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java">
+      <ranges>
+        <range start1="2" end1="5" start2="2" end2="2" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="7" end1="8" start2="4" end2="4" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="9" end1="9" start2="5" end2="14" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="16" end1="17" start2="21" end2="22" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="19" end1="20" start2="24" end2="25" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="30" end1="31" start2="35" end2="36" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="48" end1="50" start2="53" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="84" end1="86" start2="94" end2="94" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="111" end1="112" start2="119" end2="127" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="113" end1="114" start2="128" end2="128" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="115" end1="118" start2="129" end2="129" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="119" end1="119" start2="130" end2="144" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="127" end1="128" start2="152" end2="153" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="131" end1="131" start2="156" end2="157" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="140" end1="142" start2="166" end2="168" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="154" end1="157" start2="180" end2="183" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="173" end1="174" start2="199" end2="200" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="186" end1="187" start2="212" end2="213" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="196" end1="199" start2="222" end2="225" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign02/CS2420Student.java">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="13" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="13" end1="13" start2="14" end2="15" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="14" end1="14" start2="16" end2="17" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="15" end1="15" start2="18" end2="19" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="41" end1="45" start2="45" end2="61" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="56" end1="57" start2="72" end2="73" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="58" end1="61" start2="74" end2="83" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="75" end1="76" start2="97" end2="98" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="79" end1="80" start2="101" end2="102" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="93" end1="93" start2="115" end2="140" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java">
+      <ranges>
+        <range start1="16" end1="18" start2="16" end2="18" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="124" end1="130" start2="124" end2="130" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="136" end1="143" start2="136" end2="144" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign02/CS2420Class.java">
+      <ranges>
+        <range start1="39" end1="39" start2="39" end2="40" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="65" end1="66" start2="66" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="82" end1="84" start2="83" end2="87" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java">
+      <ranges>
+        <range start1="18" end1="20" start2="18" end2="20" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="26" end1="27" start2="26" end2="27" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="28" end1="28" start2="28" end2="29" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="30" end1="31" start2="31" end2="40" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="33" end1="33" start2="42" end2="79" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="34" end1="34" start2="80" end2="103" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,6 +130,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
@@ -74,12 +155,64 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign02" />
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CS2420StudentTester.testGetContactInfo">
-    <configuration name="CS2420StudentTester.testGetContactInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CS2420StudentTester.testComputeFinalScore">
+    <configuration name="CS2420ClassTester.testVerySmallLookupContactInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
+      <option name="METHOD_NAME" value="testVerySmallLookupContactInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CS2420ClassTester.testVerySmallStudentFinalGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
+      <option name="METHOD_NAME" value="testVerySmallStudentFinalGrade" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CS2420ClassTester.testVerySmallStudentFinalScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
+      <option name="METHOD_NAME" value="testVerySmallStudentFinalScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CS2420StudentTester.testComputeFinalGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -89,39 +222,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign02" />
       <option name="MAIN_CLASS_NAME" value="assign02.CS2420StudentTester" />
-      <option name="METHOD_NAME" value="testGetContactInfo" />
+      <option name="METHOD_NAME" value="testComputeFinalGrade" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrayscaleImageTest.squarifiedVeryTallEven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CS2420StudentTester.testComputeFinalScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Assignment1.*" />
+          <option name="PATTERN" value="assign02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Assignment1" />
-      <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
-      <option name="METHOD_NAME" value="squarifiedVeryTallEven" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrayscaleImageTest.squarifiedVeryTallOdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Assignment1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Assignment1" />
-      <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
-      <option name="METHOD_NAME" value="squarifiedVeryTallOdd" />
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.CS2420StudentTester" />
+      <option name="METHOD_NAME" value="testComputeFinalScore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,45 +248,13 @@
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Assignment1.*" />
+          <option name="PATTERN" value="assign01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Assignment1" />
-      <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTest" />
       <option name="METHOD_NAME" value="squarifiedVeryWide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrayscaleImageTest.squarifiedVeryWideEven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Assignment1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Assignment1" />
-      <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
-      <option name="METHOD_NAME" value="squarifiedVeryWideEven" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrayscaleImageTest.squarifiedVeryWideOdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Assignment1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Assignment1" />
-      <option name="MAIN_CLASS_NAME" value="Assignment1.GrayscaleImageTest" />
-      <option name="METHOD_NAME" value="squarifiedVeryWideOdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CS2420StudentTester.testGetContactInfo" />
-        <item itemvalue="JUnit.GrayscaleImageTest.squarifiedVeryTallOdd" />
-        <item itemvalue="JUnit.GrayscaleImageTest.squarifiedVeryWideOdd" />
-        <item itemvalue="JUnit.GrayscaleImageTest.squarifiedVeryWideEven" />
-        <item itemvalue="JUnit.GrayscaleImageTest.squarifiedVeryTallEven" />
+        <item itemvalue="JUnit.CS2420StudentTester.testComputeFinalScore" />
+        <item itemvalue="JUnit.CS2420ClassTester.testVerySmallStudentFinalGrade" />
+        <item itemvalue="JUnit.CS2420StudentTester.testComputeFinalGrade" />
+        <item itemvalue="JUnit.CS2420ClassTester.testVerySmallStudentFinalScore" />
+        <item itemvalue="JUnit.CS2420ClassTester.testVerySmallLookupContactInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +281,7 @@
       <workItem from="1673447768853" duration="1649000" />
       <workItem from="1673449530860" duration="11514000" />
       <workItem from="1673914377911" duration="10613000" />
+      <workItem from="1674330548331" duration="4564000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -218,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674061358423</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished and fix many bugs&#10;added rigorous tests for all methods">
+      <created>1674177609906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674177609906</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +332,7 @@
     <MESSAGE value="added assignment 1" />
     <MESSAGE value="added lab1" />
     <MESSAGE value="Added methods to GrayscaleImage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods to GrayscaleImage" />
+    <MESSAGE value="Finished and fix many bugs&#10;added rigorous tests for all methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished and fix many bugs&#10;added rigorous tests for all methods" />
   </component>
 </project>

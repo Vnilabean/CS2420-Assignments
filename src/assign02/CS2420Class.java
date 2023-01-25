@@ -63,7 +63,7 @@ public class CS2420Class {
 	public ArrayList<CS2420Student> lookup(EmailAddress contactInfo) {
 		var tmp = new ArrayList<CS2420Student>();
 		for(CS2420Student s: studentList)
-			if (s.getContactInfo() == contactInfo)
+			if (s.getContactInfo().equals(contactInfo))
 				tmp.add(s);
 		return tmp;
 	}
@@ -80,8 +80,10 @@ public class CS2420Class {
 	 */
 	public void addScore(int uNID, double score, String category) {
 		CS2420Student addStudentScore = lookup(uNID);
-		addStudentScore.addScore(score, category);
-	}
+		if (addStudentScore != null) {
+			addStudentScore.addScore(score, category);
+		}
+		}
 	
 	/**
 	 * Computes the average score of all CS 2420 students in the collection.

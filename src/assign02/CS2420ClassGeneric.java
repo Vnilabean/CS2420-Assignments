@@ -1,11 +1,7 @@
 package assign02;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Scanner;
 
 public class CS2420ClassGeneric<Type> {
 
@@ -14,10 +10,10 @@ public class CS2420ClassGeneric<Type> {
      */
     public CS2420ClassGeneric() {
 
-        studentList = new ArrayList<CS2420Student>();
+        studentList = new ArrayList<>();
     }
 
-    private ArrayList<CS2420Student> studentList;
+    private ArrayList<CS2420StudentGeneric<Type>> studentList;
     /**
      * Creates a student from the given first name, last name, and uNID.
      *
@@ -28,7 +24,7 @@ public class CS2420ClassGeneric<Type> {
 
 
     /**
-     * Returns the list of CS 2420 students in this class, sorted by uNID in ascending order.
+     * @Return the list of CS 2420 students in this class, sorted by uNID in ascending order.
      */
     public ArrayList<CS2420StudentGeneric<Type>> getOrderedByUNID() {
         ArrayList<CS2420StudentGeneric<Type>> studentListCopy = new ArrayList<CS2420StudentGeneric<Type>>();
@@ -46,8 +42,13 @@ public class CS2420ClassGeneric<Type> {
      * Breaks ties in first names using uNIDs (ascending order).
      */
     public ArrayList<CS2420StudentGeneric<Type>> getOrderedByName() {
-        // FILL IN — do not return null
-        return null;
+        ArrayList<CS2420StudentGeneric<Type>> studentListCopy = new ArrayList<CS2420StudentGeneric<Type>>();
+        for(CS2420StudentGeneric<Type> student : studentListCopy)
+            studentListCopy.add(student);
+
+        sort(studentListCopy, new OrderByName());
+
+        return studentListCopy;
     }
 
     /**
@@ -109,14 +110,31 @@ public class CS2420ClassGeneric<Type> {
     protected class OrderByName implements Comparator<CS2420StudentGeneric<Type>> {
         @Override
         public int compare(CS2420StudentGeneric<Type> o1, CS2420StudentGeneric<Type> o2) {
-            return 0;
+               if(o1.getLastName().compareTo(o2.getLastName()) != 0){ //if the last names are not equal
+                   return o1.getLastName().compareTo(o2.getLastName());
+               }
+               else if(o1.getFirstName().compareTo(o2.getFirstName()) != 0) //if the last names are equal and the first names are not
+                   return o1.getFirstName().compareTo(o2.getFirstName());
+               else
+                   return o1.getUNID() - o2.getUNID();
+
         }
-        // FILL IN
     }
 
-
-
-
+    /**
+     * Comparator that defines an ordering among CS 2420 students using their final score.
+     * in descending order. Using uNID to break ties in case the final scores are the same.
+     * @return a postive or negative number if the first student's score is bigger than the second student's score
+     */
+    protected class OrderByScore implements Comparator<CS2420StudentGeneric<Type>> {
+        @Override
+        public int compare(CS2420StudentGeneric<Type> s1, CS2420StudentGeneric<Type> s2) {
+            if (Double.compare(s1.computeFinalScore(), s2.computeFinalScore()) != 0)
+                return Double.compare(s1.computeFinalScore(), s2.computeFinalScore());
+            else
+                return s1.getUNID() - s2.getUNID();
+        }
+    }
 
     /**
      * Adds the given student to the collection of students in CS 2420, avoiding duplicates.
@@ -125,10 +143,11 @@ public class CS2420ClassGeneric<Type> {
      * @return true if the student was added,
      *         false if the student was not added because they already exist in the collection
      */
-    public boolean addStudent(CS2420Student student) {
+    public boolean addStudent(CS2420StudentGeneric<Type> student) {
         if (studentList.contains(student))
             return false;
         else
+            studentList.add(student);
             return true;
     }
 
@@ -138,8 +157,8 @@ public class CS2420ClassGeneric<Type> {
      * @param uNID - uNID of student to be retrieved
      * @return the CS 2420 student with the given uNID, or null if no such student exists in the collection
      */
-    public CS2420Student lookup(int uNID) {
-        for(CS2420Student s: studentList)
+    public CS2420StudentGeneric<Type> lookup(int uNID) {
+        for(CS2420StudentGeneric<Type> s: studentList)
             if (s.getUNID() == uNID)
                 return s;
         return null;
@@ -152,9 +171,9 @@ public class CS2420ClassGeneric<Type> {
      * @return a list of the CS 2420 student(s) with the given contact information (in any order),
      * 	     or an empty list if no such students exist in the collection
      */
-    public ArrayList<CS2420Student> lookup(EmailAddress contactInfo) {
-        var tmp = new ArrayList<CS2420Student>();
-        for(CS2420Student s: studentList)
+    public ArrayList<CS2420StudentGeneric<Type>> lookup(Type contactInfo) {
+        ArrayList<CS2420StudentGeneric<Type>> tmp = new ArrayList<>();
+        for(CS2420StudentGeneric<Type> s: studentList)
             if (s.getContactInfo() == contactInfo)
                 tmp.add(s);
         return tmp;
@@ -171,7 +190,7 @@ public class CS2420ClassGeneric<Type> {
      * @param category - the category in which to add the score
      */
     public void addScore(int uNID, double score, String category) {
-        CS2420Student addStudentScore = lookup(uNID);
+        CS2420StudentGeneric<Type> addStudentScore = lookup(uNID);
         addStudentScore.addScore(score, category);
     }
 
@@ -184,7 +203,7 @@ public class CS2420ClassGeneric<Type> {
         if(studentList.size() == 0)
             return 0;
         var averageScore = 0.0;
-        for (CS2420Student s : studentList)
+        for (CS2420StudentGeneric<Type> s : studentList)
             averageScore += s.computeFinalScore();
         return averageScore /= studentList.size();
     }
@@ -194,9 +213,9 @@ public class CS2420ClassGeneric<Type> {
      *
      * @return the duplicate-free list of contact information, in any order
      */
-    public ArrayList<EmailAddress> getContactList() {
-        var tmp = new ArrayList<EmailAddress>(studentList.size());
-        for (CS2420Student s : studentList)
+    public ArrayList<Type> getContactList() {
+        var tmp = new ArrayList<Type>(studentList.size());
+        for (CS2420StudentGeneric<Type> s : studentList)
             if(!tmp.contains(s.getContactInfo()))
                 tmp.add(s.getContactInfo());
         return tmp;

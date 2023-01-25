@@ -122,25 +122,26 @@ public class CS2420ClassTester {
 	public void testVerySmallStudentFinalScore() {
 		CS2420Student student = verySmallClass.lookup(2323232);
 		student.addScore(86.5, "assignment");
-		student.addScore(55, "exam");
-		student.addScore(90, "lab");
-		student.addScore(89.2, "quiz");
-		student.addScore(99, "assignment");
-		student.addScore(80, "lab");
-		student.addScore(77.7, "quiz");
+		student.addScore(55, "exams");
+		student.addScore(90, "labs");
+		student.addScore(89.2, "quizzes");
+		student.addScore(99, "assignments");
+		student.addScore(80, "labs");
+		student.addScore(77.7, "quizzes");
 		assertEquals(55, student.computeFinalScore(), 0.001);
 	}
 	
 	@Test
 	public void testVerySmallStudentFinalGrade() {
 		CS2420Student student = verySmallClass.lookup(2323232);
-		student.addScore(86.5, "assignment");
-		student.addScore(75, "exam");
-		student.addScore(90, "lab");
-		student.addScore(89.2, "quiz");
-		student.addScore(99, "assignment");
-		student.addScore(80, "lab");
-		student.addScore(77.7, "quiz");
+		student.addScore(86.5, "assignments");
+		student.addScore(75, "exams");
+		student.addScore(90, "labs");
+		student.addScore(89.2, "quizzes");
+		student.addScore(99, "assignments");
+		student.addScore(80, "labs");
+		student.addScore(77.7, "quizzes");
+		System.out.println(student.computeFinalScore());
 		assertEquals("B", student.computeFinalGrade());
 	}
 	

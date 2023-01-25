@@ -4,8 +4,8 @@ package assign02;
  * This class represents a University of Utah student, in which the uNID cannot
  * change once the student is created.  Note that each student's uNID is unique.
  * 
- * @author Erin Parker and ??
- * @version January 20, 2022
+ * @author Erin Parker and Philippe Gonzalez and Conner Francis
+ * @version January 24, 2023
  */
 public class UofUStudent {
 
@@ -79,7 +79,11 @@ public class UofUStudent {
 	 *         false otherwise
 	 */
 	public boolean equals(Object other) {		
-		// FILL IN -- do not return false unless appropriate
+		if (other instanceof UofUStudent) {
+			UofUStudent compU = (UofUStudent) other;
+			if (this.getUNID() == compU.getUNID())
+				return true;
+		}
 		return false;
 	}
 
