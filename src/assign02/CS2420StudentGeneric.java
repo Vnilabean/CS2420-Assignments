@@ -5,9 +5,13 @@ import java.lang.reflect.Type;
 public class CS2420StudentGeneric<Type> extends UofUStudent {
     private Type studentContactInformation;
     private double assignment = 0.0;
-    private double exams = 0.0;
-    private double labs = 0.0;
-    private double quizzes = 0.0;
+    private int assignCount = 0;
+    private double exam = 0.0;
+    private int examCount = 0;
+    private double lab = 0.0;
+    private int labCount = 0;
+    private double quiz = 0.0;
+    private int quizCount = 0;
     /**
      * Creates a student from the given first name, last name, and uNID.
      *
@@ -21,6 +25,11 @@ public class CS2420StudentGeneric<Type> extends UofUStudent {
         studentContactInformation = email;
     }
 
+    /**
+     * used to get contact info as generic in any form <Type>
+     *
+     * @return contact info as a object of <Type>
+     */
     public Type getContactInfo() {
         return studentContactInformation;
     }
@@ -34,26 +43,45 @@ public class CS2420StudentGeneric<Type> extends UofUStudent {
      */
     public void addScore(double score, String category){
         switch (category) {
-            case "assignment" -> assignment += score;
-            case "exams" -> exams += score;
-            case "labs" -> labs += score;
-            case "quizzes" -> quizzes += score;
+            case "assignment":
+                assignment += score;
+                assignCount++;
+                break;
+            case "exam":
+                exam += score;
+                examCount++;
+                break;
+            case "lab":
+                lab += score;
+                labCount++;
+                break;
+            case "quiz":
+                quiz += score;
+                quizCount++;
+                break;
         }
     }
 
     /**
-     * This takes a final score that from the percentages of assignments 40%, exams 40%, labs 10%, and
-     * quizzes 10%. if a student has below a 65% exam average, their exam average is their final
+     * This takes a final score that from the percentages of assignment 40%, exam 40%, lab 10%, and
+     * quiz 10%. if a student has below a 65% exam average, their exam average is their final
      * course score. If a student does not have at least one score in each category return 0.0.
      * @return total score
      */
     public double computeFinalScore(){
-        if (exams < 65){
-            return 65.0;
+        double finalExam = (exam/examCount);
+        if (finalExam < 65){
+            return finalExam;
         }
-        if (assignment != 0.0 && exams != 0.0 && labs != 0.0 && quizzes != 0.0 ) {
-            return 40/assignment + 40/exams + 10/labs + 10/ quizzes;
+        if (assignment != 0.0 && exam != 0.0 && lab != 0.0 && quiz != 0.0 ) {
+            double finalAssignment = (assignment/assignCount);
 
+            double finalLab = (lab/labCount);
+            double finalQuiz = (quiz/quizCount);
+            return (finalAssignment * 0.4)
+                    + (finalExam * 0.4)
+                    + (finalLab * 0.1)
+                    + (finalQuiz * 0.1);
         }
         return 0.0;
     }
@@ -68,7 +96,7 @@ public class CS2420StudentGeneric<Type> extends UofUStudent {
      * @return final grade percentage
      */
     public String computeFinalGrade(){
-        if (assignment != 0.0 && exams != 0.0 && labs != 0.0 && quizzes != 0.0 ) {
+        if (assignment != 0.0 && exam != 0.0 && lab != 0.0 && quiz != 0.0 ) {
             double finalGrade = computeFinalScore();
             if (finalGrade >= 93 && finalGrade <= 100){return "A";};
             if (finalGrade >= 90 && finalGrade < 93){return "A-";};
@@ -85,6 +113,35 @@ public class CS2420StudentGeneric<Type> extends UofUStudent {
 
         }
         return "N/A";
+    }
+
+    /**
+     * Helper method to test final score output while not adding many scores to one object
+     */
+    public void clear() {
+        assignment = 0.0;
+        assignCount = 0;
+        quiz = 0.0;
+        quizCount = 0;
+        lab = 0.0;
+        labCount = 0;
+        exam = 0.0;
+        examCount = 0;
+    }
+
+    /**
+     * getter method for testing values of scores.
+     * @param category score category in which you want to access value of
+     * @return the score of the assignment or -1 if input is not correct
+     */
+    public double getScore(String category){
+        return switch (category) {
+            case "assignment" -> assignment;
+            case "exam" -> exam;
+            case "lab" -> lab;
+            case "quiz" -> quiz;
+            default -> -1;
+        };
     }
 
 }

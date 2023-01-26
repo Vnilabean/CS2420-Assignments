@@ -1,8 +1,8 @@
 package assign02;
 
 /**
- * This Class creates a student and modifies and computes their scores on assignments, exams, labs,
- * and quizzes. This gives a letter grade along with their final scores.
+ * This Class creates a student and modifies and computes their scores on assignment, exam, lab,
+ * and quiz. This gives a letter grade along with their final scores.
  *
  * @author Conner Francis and Philippe Gonzalez
  * @version January 21, 2023
@@ -50,14 +50,15 @@ public class CS2420Student extends UofUStudent{
     }
 
     /**
-     * This takes a final score that from the percentages of assignments 40%, exams 40%, labs 10%, and
-     * quizzes 10%. if a student has below a 65% exam average, their exam average is their final
+     * This takes a final score that from the percentages of assignment 40%, exam 40%, lab 10%, and
+     * quiz 10%. if a student has below a 65% exam average, their exam average is their final
      * course score. If a student does not have at least one score in each category return 0.0.
      * @return total score
      */
     public double computeFinalScore(){
-        if (exams < 65){
-            return exams;
+        double finalExam = (exam/examCount);
+        if (finalExam < 65){
+            return finalExam;
         }
         if (assignment != 0.0 && exams != 0.0 && labs != 0.0 && quizzes != 0.0 ) {
             return 40/assignment + 40/exams + 10/labs + 10/ quizzes;
@@ -93,6 +94,34 @@ public class CS2420Student extends UofUStudent{
 
     }
         return "N/A";
+    }
+
+    /**
+     * used for testing by clearing values assigned to a student
+     */
+    public void clear() {
+        assignment = 0.0;
+        assignCount = 0;
+        quiz = 0.0;
+        quizCount = 0;
+        lab = 0.0;
+        labCount = 0;
+        exam = 0.0;
+        examCount = 0;
+    }
+    /**
+     * getter method for testing values of scores.
+     * @param category score category in which you want to access value of
+     * @return the score of the assignment or -1 if input is not correct
+     */
+    public double getScore(String category){
+        return switch (category) {
+            case "assignment" -> assignment;
+            case "exam" -> exam;
+            case "lab" -> lab;
+            case "quiz" -> quiz;
+            default -> -1;
+        };
     }
 
 }

@@ -24,6 +24,7 @@ public class CS2420ClassGeneric<Type> {
 
 
     /**
+     * Returns the list of CS 2420 students in this class, sorted by uNID in ascending order.
      * @Return the list of CS 2420 students in this class, sorted by uNID in ascending order.
      */
     public ArrayList<CS2420StudentGeneric<Type>> getOrderedByUNID() {
@@ -174,7 +175,7 @@ public class CS2420ClassGeneric<Type> {
     public ArrayList<CS2420StudentGeneric<Type>> lookup(Type contactInfo) {
         ArrayList<CS2420StudentGeneric<Type>> tmp = new ArrayList<>();
         for(CS2420StudentGeneric<Type> s: studentList)
-            if (s.getContactInfo() == contactInfo)
+            if (s.getContactInfo().equals(contactInfo))
                 tmp.add(s);
         return tmp;
     }
@@ -191,7 +192,10 @@ public class CS2420ClassGeneric<Type> {
      */
     public void addScore(int uNID, double score, String category) {
         CS2420StudentGeneric<Type> addStudentScore = lookup(uNID);
-        addStudentScore.addScore(score, category);
+        if (addStudentScore != null) {
+            addStudentScore.addScore(score, category);
+        }
+
     }
 
     /**
