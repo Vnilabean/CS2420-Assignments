@@ -8,14 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**">
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="final">
+      <change afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -41,106 +36,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign02/CS2420Student.java">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="5" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="12" end1="18" start2="12" end2="19" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="44" end1="48" start2="45" end2="61" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="52" end1="54" start2="65" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="58" end1="60" start2="71" end2="74" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="61" end1="63" start2="75" end2="77" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="64" end1="64" start2="78" end2="84" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="78" end1="79" start2="98" end2="99" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="82" end1="83" start2="102" end2="103" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="97" end1="97" start2="117" end2="145" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassGenericTester.java">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="3" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="14" end1="17" start2="13" end2="16" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="20" end1="24" start2="19" end2="23" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="25" end1="36" start2="24" end2="35" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="37" end1="82" start2="36" end2="89" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="83" end1="99" start2="90" end2="106" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="100" end1="110" start2="107" end2="117" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="111" end1="112" start2="118" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="113" end1="142" start2="120" end2="149" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="143" end1="202" start2="150" end2="209" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="203" end1="213" start2="210" end2="220" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="214" end1="243" start2="221" end2="250" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="244" end1="273" start2="251" end2="303" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="11" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="7" end1="10" start2="14" end2="21" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="23" end1="23" start2="34" end2="39" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="36" end1="40" start2="52" end2="68" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="44" end1="46" start2="72" end2="74" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="50" end1="52" start2="78" end2="81" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="53" end1="55" start2="82" end2="84" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="56" end1="56" start2="85" end2="91" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="70" end1="71" start2="105" end2="106" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="88" end1="88" start2="123" end2="152" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java">
-      <ranges>
-        <range start1="11" end1="11" start2="11" end2="16" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="20" end1="22" start2="25" end2="25" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="31" end1="32" start2="34" end2="42" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="36" end1="40" start2="46" end2="51" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="42" end1="46" start2="53" end2="57" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="48" end1="52" start2="59" end2="63" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="54" end1="60" start2="65" end2="71" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="61" end1="62" start2="72" end2="72" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="66" end1="70" start2="76" end2="81" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="77" end1="81" start2="88" end2="92" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="83" end1="87" start2="94" end2="98" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="89" end1="93" start2="100" end2="104" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassTester.java">
-      <ranges>
-        <range start1="3" end1="8" start2="3" end2="3" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="12" end1="12" start2="7" end2="9" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="15" end1="18" start2="12" end2="15" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="21" end1="31" start2="18" end2="28" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="32" end1="42" start2="29" end2="51" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="43" end1="59" start2="52" end2="68" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="60" end1="70" start2="69" end2="79" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="71" end1="72" start2="80" end2="81" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="73" end1="101" start2="82" end2="110" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="102" end1="162" start2="111" end2="172" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="163" end1="172" start2="173" end2="182" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="173" end1="177" start2="183" end2="187" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="178" end1="201" start2="188" end2="304" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign02/CS2420ClassGeneric.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="14" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="16" end1="24" start2="25" end2="25" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="26" end1="26" start2="27" end2="28" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="30" end1="31" start2="32" end2="33" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="42" end1="42" start2="44" end2="45" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="45" end1="46" start2="48" end2="49" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="60" end1="60" start2="63" end2="65" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="62" end1="64" start2="67" end2="75" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="86" end1="88" start2="97" end2="97" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="95" end1="98" start2="104" end2="107" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="108" end1="108" start2="117" end2="118" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="112" end1="113" start2="122" end2="123" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="115" end1="116" start2="125" end2="126" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="132" end1="133" start2="142" end2="143" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="176" end1="177" start2="186" end2="187" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="193" end1="194" start2="203" end2="207" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -193,7 +88,20 @@
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CS2420ClassTimer">
+    <configuration name="CS2420ClassTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTimer" />
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CS2420ClassGenericTester.testOrderedByScoreHighercutoff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -242,22 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CS2420ClassTester.testLargeStudentFinalGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign02" />
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
-      <option name="METHOD_NAME" value="testLargeStudentFinalGrade" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CS2420ClassTester.testLargeUpdateName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -292,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CS2420ClassTimer" />
         <item itemvalue="JUnit.CS2420ClassGenericTester.testOrderedByScoreHighercutoff" />
         <item itemvalue="JUnit.CS2420ClassGenericTester.testOrderedByScoreWithNoFinalGrade" />
         <item itemvalue="JUnit.CS2420ClassTester.testLargeUpdateName" />
         <item itemvalue="JUnit.CS2420ClassTester.testLargeStudentComputeScoreTwice" />
-        <item itemvalue="JUnit.CS2420ClassTester.testLargeStudentFinalGrade" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +204,8 @@
       <workItem from="1673449530860" duration="11514000" />
       <workItem from="1673914377911" duration="10613000" />
       <workItem from="1674330548331" duration="4564000" />
-      <workItem from="1674697121296" duration="8961000" />
+      <workItem from="1674697121296" duration="9138000" />
+      <workItem from="1674779067334" duration="3528000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -349,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674614473911</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final">
+      <created>1674706872409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674706872409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +272,7 @@
     <MESSAGE value="Added methods to GrayscaleImage" />
     <MESSAGE value="Finished and fix many bugs&#10;added rigorous tests for all methods" />
     <MESSAGE value="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>
