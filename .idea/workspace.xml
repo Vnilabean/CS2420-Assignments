@@ -9,7 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="final">
-      <change afterPath="$PROJECT_DIR$/src/assign02/CS2420ClassTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="">
@@ -88,84 +87,7 @@
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CS2420ClassTimer">
-    <configuration name="CS2420ClassTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTimer" />
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CS2420ClassGenericTester.testOrderedByScoreHighercutoff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign02" />
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassGenericTester" />
-      <option name="METHOD_NAME" value="testOrderedByScoreHighercutoff" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CS2420ClassGenericTester.testOrderedByScoreWithNoFinalGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign02" />
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassGenericTester" />
-      <option name="METHOD_NAME" value="testOrderedByScoreWithNoFinalGrade" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CS2420ClassTester.testLargeStudentComputeScoreTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign02" />
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
-      <option name="METHOD_NAME" value="testLargeStudentComputeScoreTwice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CS2420ClassTester.testLargeUpdateName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign02" />
-      <option name="MAIN_CLASS_NAME" value="assign02.CS2420ClassTester" />
-      <option name="METHOD_NAME" value="testLargeUpdateName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -182,13 +104,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimplePriorityQueueTester.testContainsInPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign03" />
+      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
+      <option name="METHOD_NAME" value="testContainsInPriorityQue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimplePriorityQueueTester.testIfPriorityQueIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign03" />
+      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
+      <option name="METHOD_NAME" value="testIfPriorityQueIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimplePriorityQueueTester.testInsertAllIntoPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign03" />
+      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
+      <option name="METHOD_NAME" value="testInsertAllIntoPriorityQue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimplePriorityQueueTester.testInsertIntoPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign03" />
+      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
+      <option name="METHOD_NAME" value="testInsertIntoPriorityQue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimplePriorityQueueTester.testSizeOfPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign03" />
+      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
+      <option name="METHOD_NAME" value="testSizeOfPriorityQue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CS2420ClassTimer" />
-        <item itemvalue="JUnit.CS2420ClassGenericTester.testOrderedByScoreHighercutoff" />
-        <item itemvalue="JUnit.CS2420ClassGenericTester.testOrderedByScoreWithNoFinalGrade" />
-        <item itemvalue="JUnit.CS2420ClassTester.testLargeUpdateName" />
-        <item itemvalue="JUnit.CS2420ClassTester.testLargeStudentComputeScoreTwice" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testInsertAllIntoPriorityQue" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testIfPriorityQueIsEmpty" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testSizeOfPriorityQue" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testContainsInPriorityQue" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testInsertIntoPriorityQue" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +208,9 @@
       <workItem from="1674330548331" duration="4564000" />
       <workItem from="1674697121296" duration="9138000" />
       <workItem from="1674779067334" duration="3528000" />
+      <workItem from="1674935510403" duration="95000" />
+      <workItem from="1675047337399" duration="3263000" />
+      <workItem from="1675127714981" duration="10037000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -249,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674706872409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final">
+      <created>1674935552309</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674935552309</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,5 +286,12 @@
     <MESSAGE value="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**" />
     <MESSAGE value="final" />
     <option name="LAST_COMMIT_MESSAGE" value="final" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="priorityQue[index]" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
