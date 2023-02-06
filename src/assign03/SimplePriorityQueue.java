@@ -17,12 +17,20 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
-
+/**
+ * An array that acts as a priority que from ascending order left to right with the
+ * biggest objects on the right and smaller ones on the left of the priority que to indicate its priority.
+ * Holds the size in a separate variable to change it when necessary such as inserting something or removing the max
+ * number. When the priority que runs out of size it gets doubled.(not the field)
+ *
+ * @author Philippe Gonzalez and Conner Francis
+ * @version Jan 31, 2023
+ */
 public class SimplePriorityQueue<E> implements PriorityQueue<E> {
 
     private E[] priorityQue; // array storage
     private int size; // keeps track of how many items have been added
-    private Comparator<? super E> c;
+    private Comparator<? super E> c = null;
 
     @SuppressWarnings("unchecked")
     /**
@@ -45,14 +53,16 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
         c = cmp;
     }
 
-    @SuppressWarnings("unchecked")
+    /**
+     * private helper method to double an array's size and
+     * put the original priority queue's elements into the new one
+     */
     private void growArray() {
         E[] result = (E[]) new Object[priorityQue.length * 2];
         for (int i = 0; i < size; i++) {
             result[i] = priorityQue[i];
         }
         priorityQue = result;
-
     }
 
 
@@ -79,6 +89,9 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
      */
     @Override
     public E deleteMax() throws NoSuchElementException {
+        if (size == 0) {
+           throw new NoSuchElementException();
+        }
         E temp = priorityQue[size - 1];
         priorityQue[size - 1] = null;
         size--;
@@ -87,11 +100,15 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
 
     /**
      * Inserts the specified element into this priority queue.
+     * if the last element inserted is the final spot within the priority queue
+     * then grow the array. Search the array to know where to insert the element within
+     * the array.
      *
      * @param item - the element to insert
      */
     @Override
     public void insert(E item) {
+        int cmp;
         if (size == priorityQue.length - 1) {
             growArray();
         }
@@ -101,7 +118,13 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
             return;
         }
         int index = binarySearchArray(item,0);
-        int cmp = ((Comparable<? super E>) item).compareTo(priorityQue[index]);
+        if (c != null) {
+            cmp = (c.compare(item,priorityQue[index]));
+        }
+        else {
+            cmp = ((Comparable<? super E>) item).compareTo(priorityQue[index]);
+
+        }
         if (cmp <= 0) {
             for (int i = size-1; i >= index; i--) {
                 priorityQue[i + 1] = priorityQue[i];
@@ -117,7 +140,6 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
         }
 
         size++;
-        // first a binary search method need to be made and then the rest of this can be implemented
     }
 
     /**
@@ -175,6 +197,7 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
      * and slowly searches through it and if it finds the correct element return the index.
      * If it can't find the correct element it returns the Index of the element closest to the indicated
      * item with the index of that element being less than the indicated item.
+     *
      * @param item generic item E that is used for binary searching the array
      * @param search
      * @return the index of the item found
@@ -185,8 +208,15 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
 
 
         while (lower <= upper) {
+            int cmp;
             int mid = (lower + upper) / 2;
-            int cmp = ((Comparable<? super E>) item).compareTo(priorityQue[mid]);
+            if (c != null) {
+                cmp = (c.compare(item,priorityQue[mid]));
+            }
+            else {
+                cmp = ((Comparable<? super E>) item).compareTo(priorityQue[mid]);
+            }
+
             if (search != 1 && lower == upper) {
                 return lower;
             }
@@ -199,21 +229,10 @@ public class SimplePriorityQueue<E> implements PriorityQueue<E> {
             if (cmp < 0) {
                 upper = mid - 1;
             }
-
+        }
+        if (search != 1) {
+            return lower;
         }
         return -1;
-    }
-
-
-
-
-    public String toString() {
-       int[] arr = new int[size];
-       for (int i = 0;i<=size-1;i++) {
-           arr[i] = (int) priorityQue[i];
-       }
-       return Arrays.toString(arr);
-
-
     }
 }

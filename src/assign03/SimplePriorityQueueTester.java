@@ -1,14 +1,14 @@
 package assign03;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Optional;
+import java.util.NoSuchElementException;
+import java.util.Random;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * This class tests all the SimplePriorityQueue's methods and the various outcomes of what could
@@ -17,26 +17,45 @@ import static org.junit.Assert.assertTrue;
  * @author Philippe Gonzalez and Conner Francis
  */
 public class SimplePriorityQueueTester {
-    SimplePriorityQueue<Integer> test;
+    SimplePriorityQueue<Integer> testInteger;
+    SimplePriorityQueue<String> testString;
+    SimplePriorityQueue<TestClassEmployee> testClass;
     @BeforeEach
     void SetUp(){
-        test = new SimplePriorityQueue<Integer>();
-        test.insert(5);
-        test.insert(1);
-        test.insert(8);
-        test.insert(4);
-        test.insert(2);
-        test.insert(14);
-        test.insert(100);
-        test.insert(1);
-        test.insert(3);
+        // Integer testing queue
+        testInteger = new SimplePriorityQueue<Integer>();
+        testInteger.insert(5);
+        testInteger.insert(1);
+        testInteger.insert(8);
+        testInteger.insert(4);
+        testInteger.insert(2);
+        testInteger.insert(14);
+        testInteger.insert(100);
+        testInteger.insert(1);
+        testInteger.insert(3);
+        //String testing queue
+        testString = new SimplePriorityQueue<String>();
+        testString.insert("Joel");
+        testString.insert("DirtyTwoToes");
+        testString.insert("Eli");
+        testString.insert("Angela");
+        testString.insert("Bott");
+        testString.insert("Cena");
+        testString.insert("Zeb");
+        testString.insert("Waltuh");
+        // TestClass testing queue // comparator sorts by the employee badge id number
+        testClass = new SimplePriorityQueue<TestClassEmployee>(new TestClassEmployee.sortById());
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),12345));
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),12225));
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),41263));
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),89302));
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),33185));
+        testClass.insert(new TestClassEmployee(randomName(),randomName(),49843));
+
 
     }
 
-    @Test
-    public void test1(){
-        System.out.println(test.toString());
-    }
+
 
 
     @Test
@@ -47,19 +66,20 @@ public class SimplePriorityQueueTester {
     }
 
     @Test
-    public void testDeleteMaxOfPriorityQue(){
-        test.deleteMax();
-        int temp = test.findMax();
+    public void testDeleteMaxInteger(){
+        testInteger.deleteMax();
+        int temp = testInteger.findMax();
         assertEquals(14, temp);
 
     }
 
     @Test
-    public void testInsertIntoPriorityQue(){
-        test.insert(0);
-        assertTrue(test.contains(0));
+    public void testInsertInteger(){
+        testInteger.insert(0);
+        assertTrue(testInteger.contains(0));
 
     }
+
 
     @Test
     public void testInsertAllIntoPriorityQue(){
@@ -68,8 +88,8 @@ public class SimplePriorityQueueTester {
             temp.add(i);
         }
 
-        test.clear();
-        test.insertAll(temp);
+        testInteger.clear();
+        testInteger.insertAll(temp);
         for(int i = 0;i<100;i++) {
             assertTrue(temp.contains(i));
         }
@@ -88,17 +108,17 @@ public class SimplePriorityQueueTester {
     }
 
     @Test
-    public void testIfPriorityQueIsEmpty(){
-        test.clear();
-        assertTrue(test.isEmpty());
+    public void testEmptyInteger(){
+        testInteger.clear();
+        assertTrue(testInteger.isEmpty());
         SimplePriorityQueue<Integer> temp = new SimplePriorityQueue<Integer>();
         assertTrue(temp.isEmpty());
     }
 
     @Test
-    public void testClearPriorityQue(){
-        test.clear();
-        assertTrue(test.isEmpty());
+    public void testClearInteger(){
+        testInteger.clear();
+        assertTrue(testInteger.isEmpty());
     }
 
 }
