@@ -8,8 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="final">
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="main logic done, needs more testing">
+      <change afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign03/TestClassEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign04/integers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign03/SimplePriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -19,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +36,39 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="2" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="6" end1="6" start2="5" end2="6" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="7" end1="8" start2="7" end2="9" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="9" end1="11" start2="10" end2="11" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="17" end1="17" start2="17" end2="18" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="19" end1="20" start2="20" end2="23" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="22" end1="32" start2="25" end2="55" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="35" end1="39" start2="58" end2="59" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="42" end1="44" start2="62" end2="64" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="47" end1="47" start2="67" end2="103" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="49" end1="52" start2="105" end2="108" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="57" end1="60" start2="113" end2="116" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="62" end1="62" start2="118" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="64" end1="65" start2="121" end2="122" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="70" end1="72" start2="127" end2="129" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="79" end1="81" start2="136" end2="138" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="84" end1="86" start2="141" end2="143" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="90" end1="93" start2="147" end2="150" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="98" end1="101" start2="155" end2="158" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="102" end1="102" start2="159" end2="315" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,34 +79,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vnilabean/IdeaProjects/CS2420 Assignments/src/Assignment1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign04",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="$PROJECT_DIR$/src/Assignment1" />
       <recent name="$PROJECT_DIR$/src/Lab01" />
     </key>
@@ -84,10 +119,11 @@
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign04" />
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LargestNumberSolverTest.findLargestNumber">
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -104,39 +140,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePriorityQueueTester.testContainsInPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestNumberSolverTest.findLargestNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign03.*" />
+          <option name="PATTERN" value="assign04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign03" />
-      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
-      <option name="METHOD_NAME" value="testContainsInPriorityQue" />
+      <option name="PACKAGE_NAME" value="assign04" />
+      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
+      <option name="METHOD_NAME" value="findLargestNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePriorityQueueTester.testIfPriorityQueIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestNumberSolverTest.insertionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign03.*" />
+          <option name="PATTERN" value="assign04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign03" />
-      <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
-      <option name="METHOD_NAME" value="testIfPriorityQueIsEmpty" />
+      <option name="PACKAGE_NAME" value="assign04" />
+      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
+      <option name="METHOD_NAME" value="insertionSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePriorityQueueTester.testInsertAllIntoPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplePriorityQueueTester.expandSimplePriorityQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -146,13 +182,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign03" />
       <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
-      <option name="METHOD_NAME" value="testInsertAllIntoPriorityQue" />
+      <option name="METHOD_NAME" value="expandSimplePriorityQueue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePriorityQueueTester.testInsertIntoPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplePriorityQueueTester.testDeleteMaxIntegerException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -162,13 +198,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign03" />
       <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
-      <option name="METHOD_NAME" value="testInsertIntoPriorityQue" />
+      <option name="METHOD_NAME" value="testDeleteMaxIntegerException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePriorityQueueTester.testSizeOfPriorityQue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplePriorityQueueTester.testInsertNegativeIntegers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +214,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign03" />
       <option name="MAIN_CLASS_NAME" value="assign03.SimplePriorityQueueTester" />
-      <option name="METHOD_NAME" value="testSizeOfPriorityQue" />
+      <option name="METHOD_NAME" value="testInsertNegativeIntegers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimplePriorityQueueTester.testInsertAllIntoPriorityQue" />
-        <item itemvalue="JUnit.SimplePriorityQueueTester.testIfPriorityQueIsEmpty" />
-        <item itemvalue="JUnit.SimplePriorityQueueTester.testSizeOfPriorityQue" />
-        <item itemvalue="JUnit.SimplePriorityQueueTester.testContainsInPriorityQue" />
-        <item itemvalue="JUnit.SimplePriorityQueueTester.testInsertIntoPriorityQue" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.findLargestNumber" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.insertionSort" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.expandSimplePriorityQueue" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testInsertNegativeIntegers" />
+        <item itemvalue="JUnit.SimplePriorityQueueTester.testDeleteMaxIntegerException" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +246,10 @@
       <workItem from="1674779067334" duration="3528000" />
       <workItem from="1674935510403" duration="95000" />
       <workItem from="1675047337399" duration="3263000" />
-      <workItem from="1675127714981" duration="10037000" />
+      <workItem from="1675127714981" duration="10193000" />
+      <workItem from="1675213385932" duration="6477000" />
+      <workItem from="1675386508142" duration="7231000" />
+      <workItem from="1675646388209" duration="5599000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -261,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674935552309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="main logic done, needs more testing">
+      <created>1675137858155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675137858155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +331,8 @@
     <MESSAGE value="Finished and fix many bugs&#10;added rigorous tests for all methods" />
     <MESSAGE value="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="main logic done, needs more testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="main logic done, needs more testing" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
