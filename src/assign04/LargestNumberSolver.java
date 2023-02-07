@@ -1,9 +1,9 @@
 package assign04;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class LargestNumberSolver {
 
@@ -22,6 +22,12 @@ public class LargestNumberSolver {
             arr[a+1] = key;
         }
     }
+
+    /**
+     * Makes a string of characters that removes [] and , for BigInteger to be able to use
+     * @param arr array to make a usable string
+     * @return string array as only numbers
+     */
     private static String arrToString(Integer[] arr) {
         StringBuilder temp = new StringBuilder();
         for (int i = 0;i < arr.length;i++) {
@@ -39,8 +45,16 @@ public class LargestNumberSolver {
     }
 
     public static int findLargestInt(Integer[] arr) throws OutOfRangeException {
+        //  2,147,483,647
 
-        return 0;
+        Integer[] temp = new Integer[arr.length];
+        System.arraycopy(arr, 0, temp, 0, arr.length);
+        insertionSort(temp, new CompareForLargestNumber());
+        BigInteger tempBigInteger = new BigInteger(arrToString(temp));
+        if(tempBigInteger.compareTo(new BigInteger(String.valueOf(2147483647))) > 0) {
+            throw new OutOfRangeException("int");
+        }
+        return tempBigInteger.intValue();
     }
 
     public static long findLargestLong(Integer[] arr) throws OutOfRangeException {
@@ -54,13 +68,34 @@ public class LargestNumberSolver {
     }
 
     public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
-
-        return new Integer[0];
+        Integer[][] arrs = new Integer[list.size()][];
+        int i = 0;
+        for (Integer[] item: list) {
+            arrs[i] = item;
+            i++;
+        }
+        insertionSort(arrs, new CompareForLargestNumberArray());
+        return arrs[k];
     }
 
-    public static List<Integer[]> readFile(String filename) {
+    public static List<Integer[]> readFile(String filename){
+        Scanner s = null;
+        try {
+            s = new Scanner(new File(filename));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        ArrayList<Integer[]> finalArr= new ArrayList<>();
+        while (s.hasNextLine()) {
+            String[] line = s.nextLine().split(" ");
+            Integer[] nums = new Integer[line.length];
+            for (int i = 0;i < line.length;i++) {
+                nums[i] = Integer.parseInt(line[i]);
+            }
+            finalArr.add(nums);
+        }
 
-        return null;
+        return finalArr;
     }
 
     static class CompareForLargestNumber implements Comparator<Integer> {
@@ -84,6 +119,15 @@ public class LargestNumberSolver {
 
 
         }
+
+    }
+
+    static class CompareForLargestNumberArray implements Comparator<Integer[]> {
+
+        @Override
+        public int compare(Integer[] o1, Integer[] o2) {
+           return LargestNumberSolver.findLargestNumber(o2).compareTo(LargestNumberSolver.findLargestNumber(o1));
+        }
     }
 
 
@@ -102,7 +146,7 @@ public class LargestNumberSolver {
      * @version February 10, 2021
      */
     @SuppressWarnings("serial")
-    public class OutOfRangeException extends RuntimeException {
+    public static class OutOfRangeException extends RuntimeException {
         public OutOfRangeException(String dataTypeName) {
             super("The value is too large for the " + dataTypeName + " datatype.");
         }
