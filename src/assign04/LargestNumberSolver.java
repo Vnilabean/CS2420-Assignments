@@ -30,8 +30,8 @@ public class LargestNumberSolver {
      */
     private static String arrToString(Integer[] arr) {
         StringBuilder temp = new StringBuilder();
-        for (int i = 0;i < arr.length;i++) {
-            temp.append(arr[i]);
+        for (Integer integer : arr) {
+            temp.append(integer);
         }
         return temp.toString();
     }
@@ -75,8 +75,8 @@ public class LargestNumberSolver {
      *
      * @param list list of integer arrays
      * @param k the index of the array that is the biggest of kth time
-     * @return the kth largest integer array within the list provided
-     * @throws IllegalArgumentException
+     * @return the kth the largest integer array within the list provided
+     * @throws IllegalArgumentException if the index location is out of bound this is thrown
      */
     public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
        if (k >= list.size() || k < 0) {
@@ -127,8 +127,8 @@ public class LargestNumberSolver {
            numab.append(num2);
            numba.append(num2);
            numba.append(num1);
-           Integer abint = Integer.parseInt(numab.toString());
-           Integer baint = Integer.parseInt(numba.toString());
+           int abint = Integer.parseInt(numab.toString());
+           int baint = Integer.parseInt(numba.toString());
            if (abint > baint) return -1;
            if (baint > abint) return 1;
            else return 0;
