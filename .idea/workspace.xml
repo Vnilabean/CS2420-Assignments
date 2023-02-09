@@ -8,7 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="main logic added needs code cleanup and method headers">
+      <change afterPath="$PROJECT_DIR$/src/assign04/OutOfRangeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" afterDir="false" />
@@ -23,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420StudentTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,20 +45,58 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java">
       <ranges>
-        <range start1="2" end1="2" start2="2" end2="4" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="3" end1="6" start2="5" end2="6" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="8" end1="11" start2="8" end2="8" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="24" end1="24" start2="21" end2="27" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="41" end1="41" start2="44" end2="45" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="42" end1="43" start2="46" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="46" end1="48" start2="57" end2="66" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="51" end1="53" start2="69" end2="75" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="56" end1="58" start2="78" end2="86" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="60" end1="61" start2="88" end2="104" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="62" end1="63" start2="105" end2="106" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="86" end1="86" start2="129" end2="138" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="87" end1="90" start2="139" end2="139" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="104" end1="105" start2="153" end2="154" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="7" end1="7" start2="7" end2="16" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="8" end1="12" start2="17" end2="29" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="38" end1="38" start2="55" end2="62" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="39" end1="39" start2="63" end2="66" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="46" end1="46" start2="73" end2="82" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="48" end1="54" start2="84" end2="86" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="55" end1="57" start2="87" end2="88" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="59" end1="59" start2="90" end2="99" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="60" end1="62" start2="100" end2="107" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="64" end1="64" start2="109" end2="119" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="65" end1="67" start2="120" end2="125" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="69" end1="69" start2="127" end2="138" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="70" end1="70" start2="139" end2="143" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="80" end1="80" start2="153" end2="161" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="82" end1="82" start2="163" end2="164" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="85" end1="86" start2="167" end2="168" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="87" end1="88" start2="169" end2="169" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="91" end1="92" start2="172" end2="173" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="93" end1="94" start2="174" end2="174" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="100" end1="100" start2="180" end2="187" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="101" end1="102" start2="188" end2="196" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="104" end1="104" start2="198" end2="199" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="118" end1="120" start2="213" end2="213" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="124" end1="124" start2="217" end2="224" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="125" end1="126" start2="225" end2="234" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="132" end1="135" start2="240" end2="240" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="147" end1="153" start2="252" end2="253" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="2" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="7" end1="11" start2="6" end2="7" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="14" end1="14" start2="10" end2="16" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="15" end1="16" start2="17" end2="20" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="20" end1="21" start2="24" end2="25" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="24" end1="24" start2="28" end2="64" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="27" end1="31" start2="67" end2="69" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="32" end1="32" start2="70" end2="71" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="47" end1="48" start2="86" end2="86" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="51" end1="53" start2="89" end2="89" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="55" end1="58" start2="91" end2="94" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="62" end1="66" start2="98" end2="278" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="67" end1="69" start2="279" end2="281" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="70" end1="70" start2="282" end2="283" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="71" end1="73" start2="284" end2="285" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="74" end1="78" start2="286" end2="286" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="80" end1="81" start2="288" end2="296" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="84" end1="98" start2="299" end2="302" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="102" end1="105" start2="306" end2="308" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="106" end1="106" start2="309" end2="337" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="107" end1="107" start2="338" end2="340" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
       </ranges>
     </file>
   </component>
@@ -69,32 +109,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign04",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "CodeWithMe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign04&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
@@ -105,6 +145,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign02" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
     </key>
@@ -113,7 +154,7 @@
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LargestNumberSolverTest.readFile">
+  <component name="RunManager">
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -130,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestNumberSolverTest.findKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestNumberSolverTest.illegalFindKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -140,13 +181,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign04" />
       <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="findKthLargest" />
+      <option name="METHOD_NAME" value="illegalFindKthLargest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestNumberSolverTest.findLargestInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestNumberSolverTest.largeFindKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -156,39 +197,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign04" />
       <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="findLargestInt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestNumberSolverTest.findLargestNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign04" />
-      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="findLargestNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestNumberSolverTest.insertionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign04" />
-      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="insertionSort" />
+      <option name="METHOD_NAME" value="largeFindKthLargest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -210,13 +219,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LargestNumberSolverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign04" />
+      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestNumberSolverTest.ttttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign04" />
+      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
+      <option name="METHOD_NAME" value="ttttt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LargestNumberSolverTest.readFile" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.findKthLargest" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.findLargestInt" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.findLargestNumber" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.insertionSort" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.ttttt" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.test" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.illegalFindKthLargest" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.largeFindKthLargest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +282,9 @@
       <workItem from="1675386508142" duration="7231000" />
       <workItem from="1675646388209" duration="5793000" />
       <workItem from="1675653239020" duration="72000" />
-      <workItem from="1675737516078" duration="8515000" />
+      <workItem from="1675737516078" duration="9231000" />
+      <workItem from="1675904912648" duration="7181000" />
+      <workItem from="1675978957588" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -313,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675653043284</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="main logic added needs code cleanup and method headers">
+      <created>1675746153904</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675746153904</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +390,8 @@
     <MESSAGE value="main logic done, needs more testing" />
     <MESSAGE value="Bulk logic is done, needs smaller sections done" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="main logic added needs code cleanup and method headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="main logic added needs code cleanup and method headers" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

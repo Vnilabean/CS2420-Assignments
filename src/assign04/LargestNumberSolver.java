@@ -67,7 +67,22 @@ public class LargestNumberSolver {
         return null;
     }
 
+    /**
+     * This method finds the largest number from a list of integer arrays of those integer arrays.
+     * k = 0 should return the highest number and k = 1 should return the second-highest number.
+     * Any values of k that go beyond the length of the list of integer arrays should throw an IllegalArgumentException.
+     * Neither the list nor any of the inner arrays should be modified in any way.
+     *
+     * @param list list of integer arrays
+     * @param k the index of the array that is the biggest of kth time
+     * @return the kth largest integer array within the list provided
+     * @throws IllegalArgumentException
+     */
     public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
+       if (k >= list.size() || k < 0) {
+           throw new IllegalArgumentException();
+       }
+
         Integer[][] arrs = new Integer[list.size()][];
         int i = 0;
         for (Integer[] item: list) {
@@ -102,6 +117,7 @@ public class LargestNumberSolver {
 
         @Override
         public int compare(Integer o1, Integer o2) {
+            // checks different orders of numbers next to each other
             StringBuilder numab = new StringBuilder();
             StringBuilder numba = new StringBuilder();
 
@@ -145,10 +161,5 @@ public class LargestNumberSolver {
      * @author Erin Parker
      * @version February 10, 2021
      */
-    @SuppressWarnings("serial")
-    public static class OutOfRangeException extends RuntimeException {
-        public OutOfRangeException(String dataTypeName) {
-            super("The value is too large for the " + dataTypeName + " datatype.");
-        }
-    }
+
 }
