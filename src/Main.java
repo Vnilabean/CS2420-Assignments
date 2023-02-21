@@ -1,11 +1,5 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -22,17 +16,26 @@ class Result {
     public static List<Integer> reverseArray(List<Integer> a) {
         // Write your code here
         ArrayList<Integer> temp = new ArrayList<Integer>();
-       for (int i = a.size() -1;i==0;i--) {
-           for (int n = 0;n < a.size();n++) {
-           temp.set(n,a.get(i));
-       }}
+        for (int i = a.size() - 1; i == 0; i--) {
+            for (int n = 0; n < a.size(); n++) {
+                temp.set(n, a.get(i));
+            }
+        }
 
-
-
-
-    return temp;
+        return temp;
 
     }
+
+    /**
+     * @param <T>
+     * @return
+     */
+    public static <T> T getArrayitem() {
+
+
+        return null;
+    }
+
 
     public static class Solution {
         public static void main(String[] args) throws IOException {

@@ -6,11 +6,21 @@ import java.math.BigInteger;
 import java.util.*;
 
 public class LargestNumberSolver {
-
-
-
-
+    /**
+     * This generic method sorts the input array using an insertion sort and the input Comparator object.
+     * Suppose that we need to compare X and Y.  Instead of comparing X and Y directly, we should compare XY
+     * (i.e., X concatenated with Y) to YX. The first integer in the greater of XY and YX should appear earlier in the sorted order.
+     * For example, suppose that we need to compare 7 and 11 from the array above.  Clearly, 7 < 11.  If sorting the array in descending
+     * order and using the usual comparison, 11 would appear earlier in the sorted order. Using our custom comparison instead,
+     * we notice that 711 > 117, which means that 7 should appear earlier in the sorted order to ensure we can determine the largest number.
+     *
+     * @param arr array to be sorted
+     * @param cmp comparator used to sort the array
+     * @param <T> generic type
+     */
     public static <T> void insertionSort(T[] arr, Comparator<? super T> cmp) {
+
+
         int n = arr.length;
         for (int i = 1; i < n; i++) {
             T key = arr[i];
@@ -21,6 +31,10 @@ public class LargestNumberSolver {
             }
             arr[a+1] = key;
         }
+    }
+
+    public static void Sort(Integer[][] arr , Comparator cmp) {
+        Arrays.sort(arr,cmp);
     }
 
     /**
@@ -89,7 +103,7 @@ public class LargestNumberSolver {
             arrs[i] = item;
             i++;
         }
-        insertionSort(arrs, new CompareForLargestNumberArray());
+        Sort(arrs, new CompareForLargestNumberArray());
         return arrs[k];
     }
 
