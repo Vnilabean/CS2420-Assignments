@@ -108,6 +108,9 @@ public class GrayscaleImage {
         if (!(other instanceof GrayscaleImage otherImage)) {
             return false;
         }
+        if (this.imageData.length != otherImage.imageData.length || this.imageData[0].length != otherImage.imageData[0].length) {
+            return false;
+        }
 
         for (int i = 0; i < imageData.length; i++) {
             for (int j = 0; j < imageData[0].length; j++) {
@@ -133,7 +136,7 @@ public class GrayscaleImage {
         double pixelTotal = 0;
         for (int i = 0; i < imageData.length; i++) {
             for (int j = 0; j < imageData[0].length; j++) {
-                pixelTotal += this.getPixel(i, j);
+                pixelTotal += this.getPixel(j, i);
                 count++;
             }
         }
@@ -154,7 +157,7 @@ public class GrayscaleImage {
         double multiplier = 127 / originalAverage;
         for (int i = 0; i < imageData.length; i++) {
             for (int j = 0; j < imageData[0].length; j++) {
-                normalizedSquare.imageData[j][i] = getPixel(i, j) * multiplier;
+                normalizedSquare.imageData[i][j] = getPixel(j, i) * multiplier;
 
             }
         }
@@ -200,10 +203,11 @@ public class GrayscaleImage {
      * @throws IllegalArgumentException if the specified rectangle goes outside the bounds of the original image
      */
     public GrayscaleImage cropped(int startRow, int startCol, int width, int height) {
-        GrayscaleImage croppedSquare = new GrayscaleImage(new double[height][width]);
-        if (startRow + height > imageData.length || startCol + width > imageData[0].length) {
+
+        if (startRow + height > imageData.length || startCol + width > imageData[0].length||startRow + height<0||startCol + width<0) {
             throw new IllegalArgumentException();
         }
+        GrayscaleImage croppedSquare = new GrayscaleImage(new double[height][width]);
         int tx = 0;
         int ty = 0;
         for (int c = startCol; c < startCol + width; c++) {

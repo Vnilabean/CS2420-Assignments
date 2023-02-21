@@ -8,13 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="added tests and fixed logic up. removed exception class from main class and made its own class. Should be final build of this assignment :D">
-      <change afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="added assign 05 and most logic is right except for merge.">
+      <change afterPath="$PROJECT_DIR$/src/assign01/GrayscaleImageTestBugReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign01/GrayscaleImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign01/GrayscaleImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign01/GrayscaleImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign01/GrayscaleImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -27,6 +27,8 @@
       <change beforePath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign03/SimplePriorityQueueTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +47,74 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign04/LargestNumberSolver.java">
+    <file path="$PROJECT_DIR$/src/assign05/ArrayListSorter.java">
       <ranges>
-        <range start1="7" end1="7" start2="7" end2="16" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="8" end1="12" start2="17" end2="29" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="13" end1="13" start2="30" end2="32" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="23" end1="23" start2="42" end2="46" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="38" end1="38" start2="61" end2="68" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="39" end1="39" start2="69" end2="72" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="46" end1="46" start2="79" end2="88" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="48" end1="54" start2="90" end2="92" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="55" end1="57" start2="93" end2="94" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="59" end1="59" start2="96" end2="105" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="60" end1="62" start2="106" end2="113" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="64" end1="64" start2="115" end2="125" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="65" end1="67" start2="126" end2="131" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="91" end1="92" start2="155" end2="156" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="95" end1="95" start2="159" end2="167" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="97" end1="97" start2="169" end2="170" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="100" end1="101" start2="173" end2="174" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="102" end1="103" start2="175" end2="175" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="106" end1="107" start2="178" end2="179" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="108" end1="109" start2="180" end2="180" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="115" end1="115" start2="186" end2="193" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="116" end1="117" start2="194" end2="202" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="134" end1="136" start2="219" end2="219" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="140" end1="140" start2="223" end2="230" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="141" end1="142" start2="231" end2="240" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="148" end1="164" start2="246" end2="246" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="3" end1="4" start2="3" end2="3" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="6" end1="7" start2="5" end2="20" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="9" end1="9" start2="22" end2="26" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="17" end1="17" start2="34" end2="35" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="21" end1="27" start2="39" end2="47" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="32" end1="33" start2="52" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="34" end1="36" start2="55" end2="57" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="37" end1="38" start2="58" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="42" end1="46" start2="64" end2="68" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="50" end1="52" start2="72" end2="75" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="53" end1="55" start2="76" end2="78" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="56" end1="57" start2="79" end2="80" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="61" end1="61" start2="84" end2="85" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="72" end1="117" start2="96" end2="107" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="119" end1="119" start2="109" end2="110" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="121" end1="121" start2="112" end2="113" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="124" end1="125" start2="116" end2="117" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="126" end1="128" start2="118" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="129" end1="130" start2="120" end2="121" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="131" end1="132" start2="122" end2="123" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="135" end1="136" start2="126" end2="126" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="145" end1="145" start2="135" end2="136" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="149" end1="150" start2="140" end2="141" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="156" end1="157" start2="147" end2="149" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="158" end1="160" start2="150" end2="152" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="162" end1="163" start2="154" end2="155" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="164" end1="165" start2="156" end2="157" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="173" end1="176" start2="165" end2="170" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="177" end1="178" start2="171" end2="171" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="179" end1="180" start2="172" end2="173" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="181" end1="182" start2="174" end2="175" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="191" end1="192" start2="184" end2="185" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="197" end1="198" start2="190" end2="191" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="203" end1="204" start2="196" end2="197" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="207" end1="209" start2="200" end2="208" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="210" end1="212" start2="209" end2="211" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="216" end1="217" start2="215" end2="217" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="222" end1="222" start2="222" end2="223" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="223" end1="224" start2="224" end2="224" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="228" end1="229" start2="228" end2="229" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="241" end1="242" start2="241" end2="244" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="249" end1="249" start2="251" end2="252" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="254" end1="255" start2="257" end2="258" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="263" end1="263" start2="266" end2="267" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="268" end1="269" start2="272" end2="273" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="277" end1="277" start2="281" end2="282" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="282" end1="283" start2="287" end2="288" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="5" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="6" end1="6" start2="7" end2="8" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="9" end1="9" start2="11" end2="12" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="14" end1="14" start2="17" end2="24" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="16" end1="16" start2="26" end2="28" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="18" end1="20" start2="30" end2="31" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="21" end1="22" start2="32" end2="33" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="23" end1="23" start2="34" end2="68" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="25" end1="27" start2="70" end2="71" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="28" end1="31" start2="72" end2="73" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="32" end1="32" start2="74" end2="109" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="35" end1="35" start2="112" end2="114" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="39" end1="39" start2="118" end2="120" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="43" end1="43" start2="124" end2="126" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="44" end1="44" start2="127" end2="178" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
       </ranges>
     </file>
   </component>
@@ -127,52 +169,88 @@
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign01" />
       <recent name="assign05" />
       <recent name="assign04" />
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayListSorterTest.mergesort">
-    <configuration name="LargestNumberSolverTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTimer" />
+  <component name="RunManager">
+    <configuration name="GrayscaleImageTestBugReport.NonSquareMirrored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign04.*" />
+          <option name="PATTERN" value="assign01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListSorterTest.mergesort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign05" />
-      <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTest" />
-      <option name="METHOD_NAME" value="mergesort" />
+      <option name="PACKAGE_NAME" value="assign01" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
+      <option name="METHOD_NAME" value="NonSquareMirrored" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListSorterTest.quicksort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrayscaleImageTestBugReport.averageBrightnessNotSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign05.*" />
+          <option name="PATTERN" value="assign01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign05" />
-      <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTest" />
-      <option name="METHOD_NAME" value="quicksort" />
+      <option name="PACKAGE_NAME" value="assign01" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
+      <option name="METHOD_NAME" value="averageBrightnessNotSquare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrayscaleImageTestBugReport.equalsOnMismatchedArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign01" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
+      <option name="METHOD_NAME" value="equalsOnMismatchedArrays" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrayscaleImageTestBugReport.outOfBoundsCropped" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign01" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
+      <option name="METHOD_NAME" value="outOfBoundsCropped" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrayscaleImageTestBugReport.testDifSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign01" />
+      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
+      <option name="METHOD_NAME" value="testDifSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,45 +272,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestNumberSolverTest.readFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign04" />
-      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="readFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestNumberSolverTest.ttttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign04" />
-      <option name="MAIN_CLASS_NAME" value="assign04.LargestNumberSolverTest" />
-      <option name="METHOD_NAME" value="ttttt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayListSorterTest.mergesort" />
-        <item itemvalue="JUnit.ArrayListSorterTest.quicksort" />
-        <item itemvalue="Application.LargestNumberSolverTimer" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.readFile" />
-        <item itemvalue="JUnit.LargestNumberSolverTest.ttttt" />
+        <item itemvalue="JUnit.GrayscaleImageTestBugReport.equalsOnMismatchedArrays" />
+        <item itemvalue="JUnit.GrayscaleImageTestBugReport.NonSquareMirrored" />
+        <item itemvalue="JUnit.GrayscaleImageTestBugReport.outOfBoundsCropped" />
+        <item itemvalue="JUnit.GrayscaleImageTestBugReport.averageBrightnessNotSquare" />
+        <item itemvalue="JUnit.GrayscaleImageTestBugReport.testDifSize" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +310,7 @@
       <workItem from="1676525888603" duration="766000" />
       <workItem from="1676834330984" duration="16722000" />
       <workItem from="1676851494815" duration="348000" />
-      <workItem from="1676935203534" duration="3798000" />
+      <workItem from="1676935203534" duration="17237000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -357,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675979573997</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added assign 05 and most logic is right except for merge.">
+      <created>1676939064423</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676939064423</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +439,8 @@
     <MESSAGE value="Final" />
     <MESSAGE value="main logic added needs code cleanup and method headers" />
     <MESSAGE value="added tests and fixed logic up. removed exception class from main class and made its own class. Should be final build of this assignment :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests and fixed logic up. removed exception class from main class and made its own class. Should be final build of this assignment :D" />
+    <MESSAGE value="added assign 05 and most logic is right except for merge." />
+    <option name="LAST_COMMIT_MESSAGE" value="added assign 05 and most logic is right except for merge." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

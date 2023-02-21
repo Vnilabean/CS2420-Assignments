@@ -3,6 +3,8 @@ package assign01;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class GrayscaleImageTest {
@@ -62,6 +64,11 @@ class GrayscaleImageTest {
         assertEquals(smallSquare, equivalent);
         assertEquals(medSquare,medSquare);
     }
+
+    @Test
+    void testDifSize() {
+        assertFalse(smallWide.equals(smallSquare));
+    }
     @Test
     void testEqualsFalse() {
         assertNotEquals(smallSquare,medSquare);
@@ -76,6 +83,12 @@ class GrayscaleImageTest {
         assertEquals(smallSquare.averageBrightness(), 2.5, 2.5*.001);
         var bigZero = new GrayscaleImage(new double[1000][1000]);
         assertEquals(bigZero.averageBrightness(), 0);
+    }
+
+    @Test
+    void averageBrightnessNotSquare() {
+        // any call to a wide or tall object would have thrown an error
+        smallWide.averageBrightness();
     }
     @Test
     void averageBrightnessMedium() {
@@ -103,6 +116,27 @@ class GrayscaleImageTest {
         assertEquals(medNorm.getPixel(3,5),medNorm.getPixel(2,5),10);
     }
     @Test
+    void normalizedRect() {
+        // this would have caused an error when testing
+        smallWide.normalized();
+    }
+
+
+    @Test
+    void NonSquareMirrored() {
+        // any call to test for mirroed on a non square object would
+        // have caused an error
+        smallWide.mirrored();
+    }
+    void outOfBoundsCropped(){
+        try {
+            smallWide.cropped(0,0,-4,-4);
+
+        } catch (IllegalArgumentException e) {
+            // passes if this is caught
+        }
+    }
+    @Test
     void normalizedTest() {
         var medNorm =medSquare.normalized();
         assertEquals(medNorm.averageBrightness(),127,1);
@@ -119,6 +153,50 @@ class GrayscaleImageTest {
     void mirroredMed() {
         var mirrored = medSquare.mirrored();
         assertEquals(mirrored.getPixel(5,2),13);
+    }
+
+    @Test
+    void mirroredVeryTallEven() {
+        var medtall = new GrayscaleImage(new double[][]
+                {
+                        {1,2},
+                        {3,4},
+                        {5,6},
+                        {7,8},
+                        {9,10},
+                        {11,12},
+                        {13,14},
+                        {15,16}
+
+                }
+        );
+
+        assertEquals(medtall.mirrored().getPixel(0,0),2);
+
+//        System.out.println(medtall.getPixel(0,0));
+//        System.out.println(mirrored.getPixel(0,0));
+//        System.out.println(medtall.getPixel(1,0));
+//        System.out.println(mirrored.getPixel(1,0));
+//        System.out.println(medtall.getPixel(0,1));
+//        System.out.println(mirrored.getPixel(0,1));
+//        System.out.println(medtall.getPixel(0,1));
+//        System.out.println(mirrored.getPixel(0,0));
+        System.out.println(medtall.getPixel(1,0));
+
+
+//        var expected = new GrayscaleImage(new double[][]{{7,8},{9,10}});
+//        assertEquals(squared, expected);
+    }
+
+    @Test
+    void mismatchedSizes() {
+        assertFalse(medSquare.equals(smallWide));
+    }
+
+    @Test
+    void cropWide(){
+
+        assertEquals(smallWide.cropped(1,1,2,1).getPixel(0,0),5);
     }
 
     @Test
