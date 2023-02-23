@@ -5,7 +5,7 @@ import java.util.Collections;
 
 
 public class ArrayListSorter {
-    private static final int insertThresh = 3;
+    private static int insertThresh = 3;
     //1: returns middle index
     //2: returns first index
     //3: returns greater item of index 0 and index size-1
@@ -25,7 +25,8 @@ public class ArrayListSorter {
     public static <T extends Comparable<? super T>> void mergesort(ArrayList<T> arr) {
         int arrSize = arr.size();
 
-        // initializes temp array to arr size to use set to make merging quick
+
+//         initializes temp array to arr size to use set to make merging quick
         ArrayList<T> tempMergeArray = new ArrayList<>(arrSize);
         for (int i = 0; i < arr.size(); i++) {
             tempMergeArray.add(null);
@@ -42,16 +43,16 @@ public class ArrayListSorter {
      * @param end   ending index
      * @param <T>   generic type
      */
-    private static <T extends Comparable<? super T>> void mergeSort(ArrayList<T> arr, int start, int end, ArrayList<T> tempMergeArray) {
+    private static <T extends Comparable<? super T>> void mergeSort(ArrayList<T> arr, int start, int end, ArrayList<T> tempArr) {
         // uses private final item to change insertion sort threshold
-        if (start + insertThresh > end) {
-            insertionSort(arr);
+        if ((end - start) <= insertThresh) {
+            insertionSort(arr,start,end);
             return;
         }
         int mid = start + (end - start) / 2;
-        mergeSort(arr, start, mid, tempMergeArray);
-        mergeSort(arr, mid + 1, end, tempMergeArray);
-        merge(arr, start, mid, end, tempMergeArray);
+        mergeSort(arr, start, mid, tempArr);
+        mergeSort(arr, mid+1 , end, tempArr);
+        merge(arr, start, mid+1, end, tempArr);
     }
 
     /**
@@ -92,6 +93,18 @@ public class ArrayListSorter {
             insertionPosition++;
             rightPointer++;
         }
+        // replaces section of the original array to the sorted/merged section of the temp array
+        for (int i = start;i<=end;i++) {
+            arr.set(i,tempMergeArray.get(i));
+        }
+    }
+
+    /**
+     * sets the insertion sort threshold
+     * @param thresh
+     */
+    public static void setThresh(int thresh) {
+        insertThresh = thresh;
     }
 
     /**
@@ -105,9 +118,9 @@ public class ArrayListSorter {
         for (int i = 1; i < size; i++) {
             T current = arr.get(i);
             int prev = i - 1;
-            while (prev >= 0 && arr.get(prev).compareTo(current) > 0) {
+            while (prev >= start && arr.get(prev).compareTo(current) > 0) {
                 arr.set(prev + 1, arr.get(prev));
-                prev = prev - 1;
+                prev--;
             }
             arr.set(prev + 1, current);
         }
@@ -222,13 +235,21 @@ public class ArrayListSorter {
                     return start;
 
                 } else {
-                    return end;
+                    return end-1;
                 }
             }
             default -> {
                 return end;
             }
         }
+    }
+
+    /**
+     * sets pivot type for running timer
+     * @param n 1-3 type or last item for default/anynumber outside 1-3
+     */
+    public static void setPivot(int n) {
+        pivotType = n;
     }
 
     //generate arraylist methods---------------------------------------------------------------------

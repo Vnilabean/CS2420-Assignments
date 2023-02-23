@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Random;
 
 class ArrayListSorterTest {
     ArrayList<Integer> permutedArr, ascendingArr, descendingArr;
@@ -48,6 +50,26 @@ class ArrayListSorterTest {
         ArrayList<Integer> largeArrPerm = ArrayListSorter.generatePermuted(200);
         ArrayListSorter.mergesort(largeArrPerm);
         assertEquals(largeArrSorted,largeArrPerm);
+    }
+
+    @Test
+    void mergesortRandVeryLarge() {
+        Random r = new Random();
+        ArrayList<Integer> largeArrSorted = new ArrayList<>(1000);
+        ArrayList<Integer> largeArrRan = new ArrayList<>();
+        for (int i =0;i<1000;i++) {
+            largeArrRan.add(r.nextInt(0,10000));
+        }
+        for (int i =0;i<1000;i++) {
+           largeArrSorted.add(null);
+        }
+
+        Collections.copy(largeArrSorted,largeArrRan);
+        Collections.sort(largeArrSorted);
+
+
+        ArrayListSorter.mergesort(largeArrRan);
+        assertEquals(largeArrSorted,largeArrRan);
     }
 
     @Test
@@ -134,7 +156,7 @@ class ArrayListSorterTest {
 
     @Test
     void testInsertionSort(){
-        ArrayListSorter.insertionSort(permutedArr);
+        ArrayListSorter.insertionSort(permutedArr,0,permutedArr.size()-1);
         assertEquals(permutedArr, ascendingArr);
     }
 
