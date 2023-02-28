@@ -9,10 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="final">
-      <change afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -36,48 +39,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java">
-      <ranges>
-        <range start1="8" end1="8" start2="8" end2="10" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="11" end1="11" start2="13" end2="14" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="16" end1="16" start2="19" end2="26" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="18" end1="18" start2="28" end2="30" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="20" end1="22" start2="32" end2="33" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="23" end1="24" start2="34" end2="35" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="51" end1="51" start2="62" end2="82" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="103" end1="103" start2="134" end2="136" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="107" end1="107" start2="140" end2="142" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="111" end1="111" start2="146" end2="148" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="136" end1="137" start2="173" end2="174" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign05/ArrayListSorter.java">
-      <ranges>
-        <range start1="5" end1="6" start2="5" end2="20" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="7" end1="8" start2="21" end2="22" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="11" end1="12" start2="25" end2="26" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="26" end1="26" start2="40" end2="41" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="27" end1="28" start2="42" end2="43" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="44" end1="45" start2="59" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="46" end1="48" start2="61" end2="63" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="51" end1="54" start2="66" end2="69" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="94" end1="94" start2="109" end2="121" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="102" end1="105" start2="129" end2="132" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="107" end1="108" start2="134" end2="135" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="109" end1="110" start2="136" end2="137" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="224" end1="225" start2="251" end2="252" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="232" end1="232" start2="259" end2="267" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,35 +56,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign04&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "OverrideImplement.generate.javadoc": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign06",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign06" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="$PROJECT_DIR$/src/Assignment1" />
       <recent name="$PROJECT_DIR$/src/Lab01" />
@@ -130,13 +100,14 @@
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign06" />
       <recent name="assign01" />
       <recent name="assign05" />
       <recent name="assign04" />
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.insertInt">
     <configuration name="ArrayListSorterTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTimer" />
       <module name="CS2420 Assignments" />
@@ -182,38 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrayscaleImageTestBugReport.outOfBoundsCropped" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign01" />
-      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
-      <option name="METHOD_NAME" value="outOfBoundsCropped" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrayscaleImageTestBugReport.testDifSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign01" />
-      <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTestBugReport" />
-      <option name="METHOD_NAME" value="testDifSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -230,13 +169,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SinglyLinkedListTest.insertFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign06" />
+      <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="insertFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.insertInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign06" />
+      <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="insertInt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertInt" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertFirst" />
         <item itemvalue="Application.ArrayListSorterTimer" />
         <item itemvalue="JUnit.ArrayListSorterTest.mergesortRandVeryLarge" />
         <item itemvalue="JUnit.ArrayListSorterTest.mergesortPermuted" />
-        <item itemvalue="JUnit.GrayscaleImageTestBugReport.testDifSize" />
-        <item itemvalue="JUnit.GrayscaleImageTestBugReport.outOfBoundsCropped" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +241,8 @@
       <workItem from="1676851494815" duration="348000" />
       <workItem from="1676935203534" duration="17341000" />
       <workItem from="1677096028614" duration="407000" />
-      <workItem from="1677096446596" duration="15388000" />
+      <workItem from="1677096446596" duration="15411000" />
+      <workItem from="1677539421620" duration="8346000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -384,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676959941198</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="final">
+      <created>1677112166246</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677112166247</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +409,8 @@
       <configuration name="JUnit">
         <watch expression="priorityQue[index]" language="JAVA" />
         <watch expression="tempMergeArray" />
+        <watch expression="this" />
+        <watch expression="((Node)((Node)((Node)((Node)((Node)((Node)((Node)((SinglyLinkedList)((SinglyLinkedListTest)this).testInt).head).next).next).next).next).next).next).next" custom="assign06.SinglyLinkedListTest,assign06.SinglyLinkedList,assign06.SinglyLinkedList.Node" />
       </configuration>
     </watches-manager>
   </component>
