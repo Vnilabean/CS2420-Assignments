@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class SinglyLinkedList<E> implements List<E>{
-    private static class Node<E> {
+    static class Node<E> {
         private E data;
         private Node<E> next;
 
@@ -71,22 +71,34 @@ public class SinglyLinkedList<E> implements List<E>{
     public void insert(int index, E element) throws IndexOutOfBoundsException {
         Iterator<E> i = iterator();
 
-        if (head == null) {
+        if (head == null && index == 0) {
             insertFirst(element);
             return;
         }
+        if(index == 0) {
+            insertFirst(element);
+            return;
+        }
+        if(index > size || index < 0) {
+            throw new IndexOutOfBoundsException();
+        }
+
         Node<E> prevNode = head;
         Node<E> currentNode = head;
-        for (int l = 0; l <index;l++) {
+        Node<E> newNode = new Node<E>((E) element);
+        for (int l = 0; l <=index;l++) {
             if(!i.hasNext()) {
-                throw new IndexOutOfBoundsException();
+                currentNode.setNext(newNode);
+                size++;
+                return;
             }
             prevNode = currentNode;
             currentNode = (Node<E>) i.next();
         }
 
-        Node<E> newNode = new Node<E>((E) element);
+
         prevNode.setNext(newNode);
+        size++;
         if (!prevNode.equals(currentNode)) {
             newNode.setNext(currentNode);
 
@@ -123,6 +135,10 @@ public class SinglyLinkedList<E> implements List<E>{
         }
         Iterator<E> i = iterator();
         Node<E> currentNode = head;
+        if(index == 0) {
+            return head.getData();
+        }
+        i.next();
         for(int l = 0;l<=index;l++) {
             if(l == index) {
                 return currentNode.getData();
@@ -147,7 +163,10 @@ public class SinglyLinkedList<E> implements List<E>{
             throw new NoSuchElementException();
         }
         if(size == 1) {
+            Node<E> temp = head;
             head = null;
+            size--;
+            return temp.getData();
         }
         Node<E> temp = head;
         head = head.getNext();
@@ -199,19 +218,17 @@ public class SinglyLinkedList<E> implements List<E>{
      * @return the index of the first occurrence; -1 if the element is not found
      */
     @Override
-    public int indexOf(Object element) {
+    public int indexOf(E element) {
         Node<E> currentNode;
         Iterator<E> i = iterator();
         int position = 0;
-        if(head.getData().equals(element)){
-            return position;
-        }
+
         while(i.hasNext()) {
-            position++;
             currentNode = (Node<E>) i.next();
-            if (currentNode.equals(element)) {
+            if (currentNode.getData().equals(element)) {
                 return position;
             }
+            position++;
         }
         return -1;
     }
@@ -255,10 +272,12 @@ public class SinglyLinkedList<E> implements List<E>{
     @Override
     public Object[] toArray() {
         Object[] temp = new Object[size];
-        int position = 0;
         Iterator<E> i = iterator();
-        while (i.hasNext()) {
-            temp[position] = i.next();
+        Node<E> currentNode;
+        temp[0] = head.getData();
+        for (int l = 0; l <=size-1;l++) {
+            currentNode = (Node<E>) i.next();
+            temp[l] = currentNode.getData();
         }
         return temp;
     }
@@ -277,6 +296,7 @@ public class SinglyLinkedList<E> implements List<E>{
         private boolean removeCallable = false;
         private Node<E> currentNode = head;
         private Node<E> prevNode;
+        private boolean firstCall = true;
         /**
          * Returns true if the iteration has more elements.
          * (In other words, returns true if next would
@@ -296,7 +316,12 @@ public class SinglyLinkedList<E> implements List<E>{
          * @throws NoSuchElementException if the iteration has no more elements
          */
         @Override
-        public E next() {
+        public E next() throws NoSuchElementException{
+            if(firstCall) {
+                firstCall = false;
+
+                return (E) head;
+            }
             if(!hasNext()){
                 throw new NoSuchElementException();
             }
@@ -313,10 +338,13 @@ public class SinglyLinkedList<E> implements List<E>{
          *
          */
         @Override
-        public void remove() {
+        public void remove() throws IllegalArgumentException{
            if (removeCallable) {
                prevNode.setNext(currentNode.getNext());
+               size--;
+               return;
            }
+            throw new IllegalArgumentException();
         }
     }
 

@@ -8,14 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="final">
-      <change afterPath="$PROJECT_DIR$/src/assign06/LinkedListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="WebBrowser, WIP">
+      <change afterPath="$PROJECT_DIR$/src/assign06/LinkedListStackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign06/WebBrowserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -30,6 +28,9 @@
       <change beforePath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign04/LargestNumberSolverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign05/ArrayListSorterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/LinkedListStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="9" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="42" end1="42" start2="47" end2="60" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="45" end1="45" start2="63" end2="71" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="46" end1="46" start2="72" end2="83" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="49" end1="49" start2="86" end2="93" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="53" end1="53" start2="97" end2="108" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="57" end1="57" start2="112" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="58" end1="58" start2="120" end2="131" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="61" end1="61" start2="134" end2="140" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="65" end1="65" start2="144" end2="154" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="69" end1="69" start2="158" end2="161" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="73" end1="73" start2="165" end2="177" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="77" end1="77" start2="181" end2="185" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="80" end1="81" start2="188" end2="205" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="82" end1="82" start2="206" end2="232" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,34 +78,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "OverrideImplement.generate.javadoc": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign06",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "CodeWithMe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign06&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign06" />
@@ -107,52 +129,7 @@
       <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.insertInt">
-    <configuration name="ArrayListSorterTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTimer" />
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListSorterTest.mergesortPermuted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign05" />
-      <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTest" />
-      <option name="METHOD_NAME" value="mergesortPermuted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListSorterTest.mergesortRandVeryLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign05" />
-      <option name="MAIN_CLASS_NAME" value="assign05.ArrayListSorterTest" />
-      <option name="METHOD_NAME" value="mergesortRandVeryLarge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -169,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.toArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -179,13 +156,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign06" />
       <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertFirst" />
+      <option name="METHOD_NAME" value="toArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebBrowserTest.back" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -194,8 +171,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertInt" />
+      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
+      <option name="METHOD_NAME" value="back" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebBrowserTest.forward" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign06" />
+      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
+      <option name="METHOD_NAME" value="forward" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebBrowserTest.history" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign06" />
+      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
+      <option name="METHOD_NAME" value="history" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebBrowserTest.visit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign06" />
+      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
+      <option name="METHOD_NAME" value="visit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertInt" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertFirst" />
-        <item itemvalue="Application.ArrayListSorterTimer" />
-        <item itemvalue="JUnit.ArrayListSorterTest.mergesortRandVeryLarge" />
-        <item itemvalue="JUnit.ArrayListSorterTest.mergesortPermuted" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.toArray" />
+        <item itemvalue="JUnit.WebBrowserTest.forward" />
+        <item itemvalue="JUnit.WebBrowserTest.back" />
+        <item itemvalue="JUnit.WebBrowserTest.visit" />
+        <item itemvalue="JUnit.WebBrowserTest.history" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +267,8 @@
       <workItem from="1676935203534" duration="17341000" />
       <workItem from="1677096028614" duration="407000" />
       <workItem from="1677096446596" duration="15411000" />
-      <workItem from="1677539421620" duration="8346000" />
+      <workItem from="1677539421620" duration="9719000" />
+      <workItem from="1677632534489" duration="11230000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -363,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677112166247</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="WebBrowser, WIP">
+      <created>1677548390295</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1677548390295</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +427,8 @@
     <MESSAGE value="added assign 05 and most logic is right except for merge." />
     <MESSAGE value="fixed bugs in assign01" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="WebBrowser, WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebBrowser, WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
