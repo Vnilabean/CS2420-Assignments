@@ -3,6 +3,10 @@ package assign06;
 import java.net.URL;
 import java.util.NoSuchElementException;
 
+/**
+ * Implementation of the WebBrowser for assign06. Simulates the behaviors of the back and forward actions.
+ * Also implements a history method that returns and array of previously visited URLs.
+ */
 public class WebBrowser {
 
     public WebBrowser(){
