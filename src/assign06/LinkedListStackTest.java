@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LinkedListStackTest {
     LinkedListStack<Integer> intStack;
+
     @BeforeEach
     void setUp() {
         intStack = new LinkedListStack<>();
@@ -39,7 +40,7 @@ class LinkedListStackTest {
         intStack.push(1);
         intStack.push(5);
         intStack.push(2);
-        assertEquals(intStack.peek(),2);
+        assertEquals(intStack.peek(), 2);
         // makes sure is not modified
         assertEquals(intStack.peek(),2);
     }
@@ -49,8 +50,8 @@ class LinkedListStackTest {
         intStack.push(1);
         intStack.push(5);
         intStack.push(2);
-        assertEquals(intStack.pop(),2);
-        assertEquals(intStack.peek(),5);
+        assertEquals(intStack.pop(), 2);
+        assertEquals(intStack.peek(), 5);
         intStack.pop();
         intStack.pop();
         try {
@@ -64,11 +65,11 @@ class LinkedListStackTest {
     @Test
     void push() {
         intStack.push(1);
-        assertEquals(intStack.peek(),1);
+        assertEquals(intStack.peek(), 1);
         intStack.push(1);
-        assertEquals(intStack.peek(),1);
+        assertEquals(intStack.peek(), 1);
         intStack.push(5);
-        assertEquals(intStack.peek(),5);
+        assertEquals(intStack.peek(), 5);
         intStack.push(2);
         assertEquals(intStack.peek(),2);
 
@@ -76,9 +77,9 @@ class LinkedListStackTest {
 
     @Test
     void size() {
-        for(int i = 0;i<100;i++) {
+        for (int i = 0; i < 100; i++) {
             intStack.push(i);
         }
-        assertEquals(intStack.size(),100);
+        assertEquals(intStack.size(), 100);
     }
 }
