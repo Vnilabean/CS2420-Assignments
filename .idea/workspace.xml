@@ -8,14 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Should be done with logic, still needs testing">
-      <change afterPath="$PROJECT_DIR$/src/assign06/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign06/LinkedListStackTimer.java" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
+      <change afterPath="$PROJECT_DIR$/src/assign07/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/GraphDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/QueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign06/LinkedListStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/LinkedListStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign06/LinkedListStackTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/LinkedListStackTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -45,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,130 +57,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="4" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="12" end1="12" start2="11" end2="14" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="15" end1="15" start2="17" end2="18" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="25" end1="26" start2="28" end2="29" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="27" end1="28" start2="30" end2="31" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="29" end1="30" start2="32" end2="33" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="31" end1="33" start2="34" end2="35" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="37" end1="39" start2="39" end2="41" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="43" end1="45" start2="45" end2="48" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="46" end1="46" start2="49" end2="59" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="50" end1="52" start2="63" end2="65" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="53" end1="57" start2="66" end2="71" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="58" end1="58" start2="72" end2="80" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="65" end1="69" start2="87" end2="91" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="76" end1="77" start2="98" end2="99" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="78" end1="79" start2="100" end2="101" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="80" end1="82" start2="102" end2="104" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="83" end1="84" start2="105" end2="106" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="92" end1="93" start2="114" end2="115" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="94" end1="95" start2="116" end2="117" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="96" end1="96" start2="118" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="104" end1="105" start2="127" end2="128" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="113" end1="116" start2="136" end2="139" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="129" end1="130" start2="152" end2="153" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="152" end1="153" start2="175" end2="175" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="154" end1="154" start2="176" end2="188" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="160" end1="161" start2="194" end2="196" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="169" end1="175" start2="204" end2="207" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="180" end1="181" start2="212" end2="212" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="182" end1="182" start2="213" end2="215" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="187" end1="188" start2="220" end2="221" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="189" end1="190" start2="222" end2="222" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="191" end1="191" start2="223" end2="240" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="198" end1="199" start2="247" end2="248" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="203" end1="204" start2="252" end2="254" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="205" end1="207" start2="255" end2="256" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="208" end1="208" start2="257" end2="418" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java">
       <ranges>
-        <range start1="5" end1="31" start2="5" end2="12" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="33" end1="34" start2="14" end2="17" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="35" end1="36" start2="18" end2="20" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="37" end1="38" start2="21" end2="29" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="42" end1="42" start2="33" end2="38" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="71" end1="72" start2="67" end2="68" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="77" end1="78" start2="73" end2="74" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="81" end1="82" start2="77" end2="78" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="88" end1="91" start2="84" end2="87" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="92" end1="92" start2="88" end2="92" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="95" end1="96" start2="95" end2="104" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="97" end1="99" start2="105" end2="105" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="103" end1="104" start2="109" end2="109" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="135" end1="136" start2="140" end2="140" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="137" end1="138" start2="141" end2="142" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="140" end1="143" start2="144" end2="146" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="145" end1="146" start2="148" end2="149" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="147" end1="147" start2="150" end2="151" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="148" end1="149" start2="152" end2="152" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="161" end1="162" start2="164" end2="165" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="164" end1="165" start2="167" end2="168" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="190" end1="191" start2="193" end2="195" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="192" end1="193" start2="196" end2="196" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="195" end1="198" start2="198" end2="201" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="199" end1="199" start2="202" end2="203" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="202" end1="202" start2="206" end2="207" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="205" end1="206" start2="210" end2="213" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="207" end1="208" start2="214" end2="214" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="221" end1="223" start2="227" end2="228" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="225" end1="227" start2="230" end2="231" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="230" end1="230" start2="234" end2="237" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="262" end1="262" start2="269" end2="270" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="274" end1="279" start2="282" end2="287" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="280" end1="280" start2="288" end2="290" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="293" end1="293" start2="303" end2="368" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="297" end1="298" start2="372" end2="373" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="299" end1="299" start2="374" end2="375" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="318" end1="320" start2="394" end2="396" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="321" end1="323" start2="397" end2="399" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="324" end1="325" start2="400" end2="401" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="327" end1="328" start2="403" end2="407" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="330" end1="331" start2="409" end2="410" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="335" end1="336" start2="414" end2="415" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="337" end1="338" start2="416" end2="416" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="340" end1="347" start2="418" end2="433" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="349" end1="352" start2="435" end2="435" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign06/WebBrowser.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="9" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="6" end1="6" start2="10" end2="13" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="7" end1="9" start2="14" end2="21" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="11" end1="11" start2="23" end2="31" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="12" end1="13" start2="32" end2="37" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="15" end1="15" start2="39" end2="45" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="16" end1="17" start2="46" end2="49" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="18" end1="18" start2="50" end2="58" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="19" end1="21" start2="59" end2="64" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="22" end1="22" start2="65" end2="73" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="23" end1="25" start2="74" end2="79" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="26" end1="26" start2="80" end2="89" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="27" end1="27" start2="90" end2="93" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="28" end1="29" start2="94" end2="112" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign06/LinkedListStackTest.java">
-      <ranges>
-        <range start1="9" end1="9" start2="9" end2="12" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="11" end1="11" start2="14" end2="15" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="24" end1="25" start2="28" end2="28" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="41" end1="42" start2="44" end2="45" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="43" end1="44" start2="46" end2="53" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="51" end1="53" start2="60" end2="62" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="55" end1="61" start2="64" end2="64" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="66" end1="67" start2="69" end2="70" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="68" end1="69" start2="71" end2="72" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="70" end1="71" start2="73" end2="74" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="72" end1="74" start2="75" end2="76" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="78" end1="79" start2="80" end2="81" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="81" end1="82" start2="83" end2="84" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="21" end1="22" start2="21" end2="29" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="45" end1="48" start2="52" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="98" end1="100" start2="110" end2="110" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="104" end1="105" start2="114" end2="114" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="148" end1="149" start2="157" end2="157" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="211" end1="212" start2="219" end2="219" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="301" end1="301" start2="308" end2="373" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="307" end1="307" start2="379" end2="380" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="346" end1="347" start2="419" end2="420" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="367" end1="370" start2="440" end2="440" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
       </ranges>
     </file>
   </component>
@@ -190,36 +81,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign06&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "OverrideImplement.generate.javadoc": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign07",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign06" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="$PROJECT_DIR$/src/Assignment1" />
@@ -229,19 +121,52 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign02" />
-      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign07" />
       <recent name="assign06" />
       <recent name="assign01" />
       <recent name="assign05" />
       <recent name="assign04" />
-      <recent name="Lab01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebBrowserTest.webBrowserCon">
+  <component name="RunManager">
+    <configuration name="GraphUtilityTest.areConnected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign07" />
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
+      <option name="METHOD_NAME" value="areConnected" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphUtilityTest.shortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign07" />
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
+      <option name="METHOD_NAME" value="shortestPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GrayscaleImageTest.squarifiedVeryWide" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -253,38 +178,6 @@
       <option name="PACKAGE_NAME" value="Assignment1" />
       <option name="MAIN_CLASS_NAME" value="assign01.GrayscaleImageTest" />
       <option name="METHOD_NAME" value="squarifiedVeryWide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SinglyLinkedListTest.iteratorHasNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="iteratorHasNext" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SinglyLinkedListTest.iteratorRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="iteratorRemove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -340,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebBrowserTest.webBrowserCon" />
+        <item itemvalue="JUnit.GraphUtilityTest.shortestPath" />
+        <item itemvalue="JUnit.GraphUtilityTest.areConnected" />
         <item itemvalue="JUnit.WebBrowserTest.history" />
+        <item itemvalue="JUnit.WebBrowserTest.webBrowserCon" />
         <item itemvalue="JUnit.WebBrowserTest.visit" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.iteratorRemove" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.iteratorHasNext" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +274,10 @@
       <workItem from="1677096446596" duration="15411000" />
       <workItem from="1677539421620" duration="9719000" />
       <workItem from="1677632534489" duration="11276000" />
-      <workItem from="1677719034831" duration="15072000" />
+      <workItem from="1677719034831" duration="15381000" />
+      <workItem from="1677794714420" duration="7246000" />
+      <workItem from="1678751467277" duration="224000" />
+      <workItem from="1678751701066" duration="10147000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -516,7 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677643903530</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="should be mostly final, needs touch up on History method">
+      <created>1677734878638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1677734878638</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Final">
+      <created>1677734896595</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677734896595</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +451,6 @@
     <MESSAGE value="finished all main methods&#10;added tests to some and fixed minor mistakes&#10;**Need to apply fixes from normal class to generic**&#10;**need to add more tests**" />
     <MESSAGE value="main logic done, needs more testing" />
     <MESSAGE value="Bulk logic is done, needs smaller sections done" />
-    <MESSAGE value="Final" />
     <MESSAGE value="main logic added needs code cleanup and method headers" />
     <MESSAGE value="added tests and fixed logic up. removed exception class from main class and made its own class. Should be final build of this assignment :D" />
     <MESSAGE value="added assign 05 and most logic is right except for merge." />
@@ -549,7 +458,9 @@
     <MESSAGE value="final" />
     <MESSAGE value="WebBrowser, WIP" />
     <MESSAGE value="Should be done with logic, still needs testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Should be done with logic, still needs testing" />
+    <MESSAGE value="should be mostly final, needs touch up on History method" />
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,11 +469,6 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="9" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/assign06/WebBrowserTest.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -573,6 +479,7 @@
         <watch expression="((Node)((Node)((Node)((Node)((Node)((Node)((Node)((SinglyLinkedList)((SinglyLinkedListTest)this).testInt).head).next).next).next).next).next).next).next" custom="assign06.SinglyLinkedListTest,assign06.SinglyLinkedList,assign06.SinglyLinkedList.Node" />
         <watch expression="this" />
         <watch expression="listedTest.currentWebPG" />
+        <watch expression="q" />
       </configuration>
     </watches-manager>
   </component>
