@@ -17,10 +17,10 @@ public class LinkedListStackTimer {
                 // Generate an array of n uNIDs
 
                 // for the pop and peek tests // comment out for push
-//                for(int i = 0;i<n;i++) {
-//                     listStack.push(i);
-//                     arrayStack.push(i);
-//                }
+                for(int i = 0;i<n;i++) {
+                     listStack.push(i);
+                     arrayStack.push(i);
+                }
 
 
                 long startTime, midpointTime, stopTime;
@@ -33,22 +33,21 @@ public class LinkedListStackTimer {
                 startTime = System.nanoTime();
 
                 // timing push method
-                for(int i = 0;i<n;i++) {
-                    listStack.push(i);
-//                    arrayStack.push(i);
-                }
+
+//                    listStack.push(n);
+//                    arrayStack.push(n);
+
 
                 // timing pop method  // make sure push method at line 20 is uncommented
-//                for(int i = 0;i<n;i++) {
 //                    listStack.pop();
 //                    arrayStack.pop();
-//                }
+
 
                 // timing peek method  // make sure push method at line 20 is uncommented
-//                for (int i = 0;i<n;i++) {
+
 //                    listStack.peek();
-//                    arrayStack.peek();
-//                }
+                    arrayStack.peek();
+
 
 
 

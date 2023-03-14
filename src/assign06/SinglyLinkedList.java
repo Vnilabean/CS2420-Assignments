@@ -43,9 +43,14 @@ public class SinglyLinkedList<E> implements List<E> {
     @Override
     public void insertFirst(E element) {
         Node<E> first = new Node<E>(element);
-        first.setNext(head);
-        head = first;
-        size++;
+        if(head == null) {
+            head = first;
+            size++;
+        }else {
+            first.setNext(head);
+            head = first;
+            size++;
+        }
     }
 
     /**
