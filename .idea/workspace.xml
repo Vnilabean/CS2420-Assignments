@@ -9,16 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
-      <change afterPath="$PROJECT_DIR$/src/assign07/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/GraphDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/QueueDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign06/LinkedListStackTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/LinkedListStackTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -39,6 +34,8 @@
       <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,18 +54,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign06/SinglyLinkedList.java">
+    <file path="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java">
       <ranges>
-        <range start1="21" end1="22" start2="21" end2="29" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="45" end1="48" start2="52" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="98" end1="100" start2="110" end2="110" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="104" end1="105" start2="114" end2="114" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="148" end1="149" start2="157" end2="157" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="211" end1="212" start2="219" end2="219" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="301" end1="301" start2="308" end2="373" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="307" end1="307" start2="379" end2="380" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="346" end1="347" start2="419" end2="420" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="367" end1="370" start2="440" end2="440" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="10" end1="10" start2="10" end2="13" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="36" end1="37" start2="39" end2="40" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="38" end1="38" start2="41" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="50" end1="51" start2="66" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="55" end1="56" start2="71" end2="72" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="60" end1="60" start2="76" end2="133" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="61" end1="61" start2="134" end2="151" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign07/Vertex.java">
+      <ranges>
+        <range start1="17" end1="18" start2="17" end2="19" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="32" end1="33" start2="33" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="36" end1="37" start2="57" end2="62" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="40" end1="40" start2="65" end2="69" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="44" end1="44" start2="73" end2="77" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="60" end1="61" start2="93" end2="94" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="62" end1="62" start2="95" end2="96" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
       </ranges>
     </file>
   </component>
@@ -81,34 +86,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "OverrideImplement.generate.javadoc": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign07",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "CodeWithMe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign07&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
@@ -134,7 +139,7 @@
       <recent name="assign04" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GraphUtilityTest.areConnected">
     <configuration name="GraphUtilityTest.areConnected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -151,7 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUtilityTest.shortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GraphUtilityTest.areConnectedSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
@@ -161,7 +166,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign07" />
       <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="shortestPath" />
+      <option name="METHOD_NAME" value="areConnectedSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphUtilityTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign07" />
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphUtilityTest.throwsCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign07" />
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
+      <option name="METHOD_NAME" value="throwsCycle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphUtilityTest.throwsSmallCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign07" />
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
+      <option name="METHOD_NAME" value="throwsSmallCycle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,61 +236,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebBrowserTest.history" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
-      <option name="METHOD_NAME" value="history" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebBrowserTest.visit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
-      <option name="METHOD_NAME" value="visit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebBrowserTest.webBrowserCon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign06" />
-      <option name="MAIN_CLASS_NAME" value="assign06.WebBrowserTest" />
-      <option name="METHOD_NAME" value="webBrowserCon" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphUtilityTest.shortestPath" />
         <item itemvalue="JUnit.GraphUtilityTest.areConnected" />
-        <item itemvalue="JUnit.WebBrowserTest.history" />
-        <item itemvalue="JUnit.WebBrowserTest.webBrowserCon" />
-        <item itemvalue="JUnit.WebBrowserTest.visit" />
+        <item itemvalue="JUnit.GraphUtilityTest.areConnectedSmall" />
+        <item itemvalue="JUnit.GraphUtilityTest.throwsSmallCycle" />
+        <item itemvalue="JUnit.GraphUtilityTest.sort" />
+        <item itemvalue="JUnit.GraphUtilityTest.throwsCycle" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +282,10 @@
       <workItem from="1677719034831" duration="15381000" />
       <workItem from="1677794714420" duration="7246000" />
       <workItem from="1678751467277" duration="224000" />
-      <workItem from="1678751701066" duration="10147000" />
+      <workItem from="1678751701066" duration="10218000" />
+      <workItem from="1678832312753" duration="6574000" />
+      <workItem from="1678919725292" duration="59000" />
+      <workItem from="1678930794815" duration="6824000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -426,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677734896595</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="partially added. needs sorting method added. pathfinding implemented, needs testing.">
+      <created>1678767611951</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1678767611951</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Final">
+      <created>1678767627516</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1678767627516</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +481,7 @@
     <MESSAGE value="WebBrowser, WIP" />
     <MESSAGE value="Should be done with logic, still needs testing" />
     <MESSAGE value="should be mostly final, needs touch up on History method" />
+    <MESSAGE value="partially added. needs sorting method added. pathfinding implemented, needs testing." />
     <MESSAGE value="Final" />
     <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>

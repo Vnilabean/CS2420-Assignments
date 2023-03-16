@@ -15,7 +15,8 @@ public class Vertex<T> {
 	// used to id the Vertex
 	private T data;
 	private boolean isVisited = false;
-	private Vertex prev;
+	private Vertex<T> prev;
+	private int inDegree;
 
 	// adjacency list
 	private LinkedList<Edge> adj;
@@ -30,7 +31,27 @@ public class Vertex<T> {
 		this.adj = new LinkedList<Edge>();
 	}
 
-	public Vertex getPrev(){
+	/**
+	 * allows for modification of the InDeg
+	 * @param i
+	 */
+	public void incInDeg(int i){
+		inDegree += i;
+	}
+
+	/**
+	 * returns the int of in degrees of current vertex
+	 * @return
+	 */
+	public int getInDeg(){
+		return inDegree;
+	}
+
+	/**
+	 * gets the previous vertex
+	 * @return prev vertex
+	 */
+	public Vertex<T> getPrev(){
 		return prev;
 	}
 
@@ -38,6 +59,10 @@ public class Vertex<T> {
 		prev = p;
 	}
 
+	/**
+	 * returns boolean on whether the current vertex has been visited
+	 * @return
+	 */
 	public boolean getVisited(){
 		return this.isVisited;
 	}
@@ -58,8 +83,9 @@ public class Vertex<T> {
 	 * 
 	 * @param otherVertex - the Vertex object that is the destination of the edge
 	 */
-	public void addEdge(Vertex otherVertex) {
+	public void addEdge(Vertex<T> otherVertex) {
 		adj.add(new Edge(otherVertex));
+		otherVertex.incInDeg(1);
 	}
 
 	/**

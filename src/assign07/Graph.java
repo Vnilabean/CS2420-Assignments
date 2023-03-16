@@ -22,6 +22,11 @@ public class Graph<T> {
 		vertices = new HashMap<T, Vertex>();
 	}
 
+	/**
+	 * gets vertex item with the data it holds
+	 * @param item
+	 * @return
+	 */
 	public Vertex getVertex(T item) {
 		return vertices.get(item);
 	}
