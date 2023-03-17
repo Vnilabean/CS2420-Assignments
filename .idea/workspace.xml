@@ -9,11 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
+      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtilTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign07/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign07/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -34,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/SinglyLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign06/WebBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign06/WebBrowserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign07/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
     </list>
@@ -45,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,26 +53,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java">
+    <file path="$PROJECT_DIR$/src/assign07/GraphUtility.java">
       <ranges>
-        <range start1="10" end1="10" start2="10" end2="13" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="36" end1="37" start2="39" end2="40" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="38" end1="38" start2="41" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="50" end1="51" start2="66" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="55" end1="56" start2="71" end2="72" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="60" end1="60" start2="76" end2="133" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="61" end1="61" start2="134" end2="151" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/assign07/Vertex.java">
-      <ranges>
-        <range start1="17" end1="18" start2="17" end2="19" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="32" end1="33" start2="33" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="36" end1="37" start2="57" end2="62" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="40" end1="40" start2="65" end2="69" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="44" end1="44" start2="73" end2="77" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="60" end1="61" start2="93" end2="94" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="62" end1="62" start2="95" end2="96" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="44" end1="45" start2="44" end2="44" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="67" end1="67" start2="66" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="98" end1="99" start2="98" end2="99" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="125" end1="143" start2="125" end2="145" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
       </ranges>
     </file>
   </component>
@@ -139,7 +124,20 @@
       <recent name="assign04" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GraphUtilityTest.areConnected">
+  <component name="RunManager" selected="Application.GraphUtilTimer">
+    <configuration name="GraphUtilTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilTimer" />
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphUtilityTest.areConnected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -188,22 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUtilityTest.throwsCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign07" />
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="throwsCycle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GraphUtilityTest.throwsSmallCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
@@ -238,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphUtilTimer" />
+        <item itemvalue="JUnit.GraphUtilityTest.sort" />
         <item itemvalue="JUnit.GraphUtilityTest.areConnected" />
         <item itemvalue="JUnit.GraphUtilityTest.areConnectedSmall" />
         <item itemvalue="JUnit.GraphUtilityTest.throwsSmallCycle" />
-        <item itemvalue="JUnit.GraphUtilityTest.sort" />
-        <item itemvalue="JUnit.GraphUtilityTest.throwsCycle" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +268,7 @@
       <workItem from="1678832312753" duration="6574000" />
       <workItem from="1678919725292" duration="59000" />
       <workItem from="1678930794815" duration="6824000" />
+      <workItem from="1679006040595" duration="8384000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -448,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678767627516</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Final">
+      <created>1679006111438</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679006111438</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,6 +472,7 @@
     <MESSAGE value="Should be done with logic, still needs testing" />
     <MESSAGE value="should be mostly final, needs touch up on History method" />
     <MESSAGE value="partially added. needs sorting method added. pathfinding implemented, needs testing." />
+    <MESSAGE value="Final without the timer" />
     <MESSAGE value="Final" />
     <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>

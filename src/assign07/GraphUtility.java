@@ -65,6 +65,7 @@ public class GraphUtility {
         if (current.getData().equals(dstData)) {
             return true;
         }
+
         Iterator i = current.edges();
         while (i.hasNext()) {
             Edge edge = (Edge) i.next();
@@ -123,24 +124,26 @@ public class GraphUtility {
         q.offer(current);
         while (!q.isEmpty()) {
             current = q.poll();
-            Iterator i = current.edges();
-            current.setVisited(true);
-            if (current.getData().equals(dstData)) {
-                Vertex previous = current.getPrev();
-                data.add((Type) current.getData());
-                while (current != startingV) {
-                    current = current.getPrev();
+            if(current != null) {
+                Iterator i = current.edges();
+                current.setVisited(true);
+                if (current.getData().equals(dstData)) {
+                    Vertex previous = current.getPrev();
                     data.add((Type) current.getData());
+                    while (current != startingV) {
+                        current = current.getPrev();
+                        data.add((Type) current.getData());
+                    }
+                    Collections.reverse(data);
+                    return data;
                 }
-                Collections.reverse(data);
-                return data;
-            }
-            while (i.hasNext()) {
-                Edge connectedEdge = (Edge) i.next();
-                if (!connectedEdge.getOtherVertex().getVisited()) {
-                    q.offer(connectedEdge.getOtherVertex());
-                    connectedEdge.getOtherVertex().setVisited(true);
-                    connectedEdge.getOtherVertex().setPrev(current);
+                while (i.hasNext()) {
+                    Edge connectedEdge = (Edge) i.next();
+                    if (!connectedEdge.getOtherVertex().getVisited()) {
+                        q.offer(connectedEdge.getOtherVertex());
+                        connectedEdge.getOtherVertex().setVisited(true);
+                        connectedEdge.getOtherVertex().setPrev(current);
+                    }
                 }
             }
         }
