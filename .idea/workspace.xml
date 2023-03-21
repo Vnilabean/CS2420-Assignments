@@ -9,9 +9,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
-      <change afterPath="$PROJECT_DIR$/src/assign07/GraphUtilTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/SortedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/SpellChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/SpellCheckerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/dictionary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/good_luck.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign08/hello_world.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exammakeup/Median.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exammakeup/MedianTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exammakeup/MedianTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -44,23 +53,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assign07/GraphUtility.java">
-      <ranges>
-        <range start1="44" end1="45" start2="44" end2="44" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="67" end1="67" start2="66" end2="67" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-        <range start1="98" end1="99" start2="98" end2="99" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
-        <range start1="125" end1="143" start2="125" end2="145" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,7 +84,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign07&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/exammakeup&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,36 +100,37 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\exammakeup" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign06" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="$PROJECT_DIR$/src/Assignment1" />
-      <recent name="$PROJECT_DIR$/src/Lab01" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign08" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign02" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign08" />
+      <recent name="exammakeup" />
       <recent name="assign07" />
       <recent name="assign06" />
       <recent name="assign01" />
-      <recent name="assign05" />
-      <recent name="assign04" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GraphUtilTimer">
-    <configuration name="GraphUtilTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilTimer" />
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.clear">
+    <configuration name="MedianTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTimer" />
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign07.*" />
+          <option name="PATTERN" value="exammakeup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,65 +138,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUtilityTest.areConnected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.addAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign07.*" />
+          <option name="PATTERN" value="assign08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign07" />
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="areConnected" />
+      <option name="PACKAGE_NAME" value="assign08" />
+      <option name="MAIN_CLASS_NAME" value="assign08.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="addAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUtilityTest.areConnectedSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign07.*" />
+          <option name="PATTERN" value="assign08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign07" />
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="areConnectedSmall" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphUtilityTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign07" />
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="sort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphUtilityTest.throwsSmallCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign07" />
-      <option name="MAIN_CLASS_NAME" value="assign07.GraphUtilityTest" />
-      <option name="METHOD_NAME" value="throwsSmallCycle" />
+      <option name="PACKAGE_NAME" value="assign08" />
+      <option name="MAIN_CLASS_NAME" value="assign08.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="clear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,13 +186,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MedianTest.medianLargeShuffled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exammakeup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exammakeup" />
+      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTest" />
+      <option name="METHOD_NAME" value="medianLargeShuffled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedianTest.medianSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exammakeup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exammakeup" />
+      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTest" />
+      <option name="METHOD_NAME" value="medianSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GraphUtilTimer" />
-        <item itemvalue="JUnit.GraphUtilityTest.sort" />
-        <item itemvalue="JUnit.GraphUtilityTest.areConnected" />
-        <item itemvalue="JUnit.GraphUtilityTest.areConnectedSmall" />
-        <item itemvalue="JUnit.GraphUtilityTest.throwsSmallCycle" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.clear" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.addAll" />
+        <item itemvalue="Application.MedianTimer" />
+        <item itemvalue="JUnit.MedianTest.medianLargeShuffled" />
+        <item itemvalue="JUnit.MedianTest.medianSmall" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +268,12 @@
       <workItem from="1678832312753" duration="6574000" />
       <workItem from="1678919725292" duration="59000" />
       <workItem from="1678930794815" duration="6824000" />
-      <workItem from="1679006040595" duration="8384000" />
+      <workItem from="1679006040595" duration="8529000" />
+      <workItem from="1679092508895" duration="8767000" />
+      <workItem from="1679285268799" duration="4000" />
+      <workItem from="1679351269423" duration="1363000" />
+      <workItem from="1679358224706" duration="467000" />
+      <workItem from="1679362446805" duration="8158000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -438,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679006111438</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Final">
+      <created>1679015685358</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679015685358</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
