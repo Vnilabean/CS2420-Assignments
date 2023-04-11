@@ -4,9 +4,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * test class for BinarySearchTree Class and all of its methods
+ *
+ * @author Philippe Gonzalez and Conner Francis
+ * @version March 22, 2023
+ */
 class BinarySearchTreeTest {
     BinarySearchTree<Integer> intTree;
     @BeforeEach
@@ -18,6 +25,17 @@ class BinarySearchTreeTest {
         intTree.add(1);
         intTree.add(6);
         intTree.add(5);
+    }
+
+    @Test
+    void Gtest() {
+        intTree.clear();
+        intTree.add(1);
+        intTree.add(2);
+        assertFalse(intTree.isEmpty());
+        intTree.remove(1);
+        intTree.remove(2);
+        assertTrue(intTree.isEmpty());
     }
     @Test
     void add() {
@@ -56,7 +74,6 @@ class BinarySearchTreeTest {
         }catch (NullPointerException E) {
             //passes
         }
-
     }
 
     @Test
@@ -95,14 +112,45 @@ class BinarySearchTreeTest {
     }
 
     @Test
-    void remove() {
-        intTree.remove(3);
-        assertEquals(1,intTree.first());
+    void removeLeft() {
+        //removed root node
+        assertTrue(intTree.remove(3));
+        System.out.println(intTree.toArrayList().toString());
+        assertEquals(1, intTree.first());
         assertEquals(5,intTree.size());
         intTree.remove(1);
         assertEquals(2,intTree.first());
         assertEquals(4,intTree.size());
+    }
 
+    @Test
+    void removeRight() {
+        assertTrue(intTree.remove(5));
+        System.out.println(intTree.toArrayList().toString());
+        assertEquals(5,intTree.size());
+        assertTrue(intTree.remove(6));
+        System.out.println(intTree.toArrayList().toString());
+        assertEquals(4,intTree.size());
+        assertFalse(intTree.remove(10));
+    }
+
+    @Test
+    void removeEmpty() {
+        intTree.clear();
+        assertFalse(intTree.remove(3));
+    }
+    @Test
+    void addThenRemove() {
+        intTree.clear();
+        intTree.add(3);
+        assertEquals(1, intTree.size());
+        assertEquals(3,intTree.first());
+        assertEquals(3,intTree.last());
+        intTree.remove(3);
+        assertEquals(0,intTree.size());
+        intTree.add(1);
+        assertEquals(1,intTree.first());
+        assertEquals(1,intTree.size());
     }
 
     @Test
@@ -112,7 +160,6 @@ class BinarySearchTreeTest {
         temp.add(5);
         temp.add(2);
         intTree.removeAll(temp);
-
     }
 
     @Test

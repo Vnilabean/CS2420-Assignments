@@ -8,19 +8,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Final">
-      <change afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/SortedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/SpellChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/SpellCheckerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/dictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/good_luck.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign08/hello_world.txt" afterDir="false" />
+    <list default="true" id="857abefd-5779-4780-942a-63b968f84b2e" name="Changes" comment="Added main logic, needs improvement on the remove method and spell check needs to be implemented">
+      <change afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/HashTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/HashTableTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/MapEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/StudentBadHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/StudentGoodHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/StudentHashDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign09/StudentMediumHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign10/BinaryMaxHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign10/BinaryMaxHeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign10/FindKLargest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign10/FindKLargestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign10/PriorityQueue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/exammakeup/Median.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/exammakeup/MedianTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/exammakeup/MedianTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/SpellChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/SpellCheckerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/SpellCheckerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/hello_world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/hello_world.txt" afterDir="false" />
     </list>
     <list id="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" name="Changes by conne" comment="Changes by conne">
       <change beforePath="$PROJECT_DIR$/src/assign02/CS2420Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign02/CS2420Class.java" afterDir="false" />
@@ -44,6 +56,9 @@
       <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/GraphUtilityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign07/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign07/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign08/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign08/SpellChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +76,77 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/assign08/BinarySearchTreeTest.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="7" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="9" end1="9" start2="10" end2="16" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="21" end1="21" start2="28" end2="39" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="58" end1="59" start2="76" end2="76" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="97" end1="100" start2="114" end2="119" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="101" end1="102" start2="120" end2="122" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="104" end1="104" start2="124" end2="125" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="105" end1="105" start2="126" end2="154" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="114" end1="115" start2="163" end2="163" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign08/BinarySearchTree.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="16" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="7" end1="65" start2="17" end2="17" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="66" end1="68" start2="18" end2="23" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="72" end1="72" start2="27" end2="33" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="75" end1="76" start2="36" end2="36" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="95" end1="96" start2="55" end2="56" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="97" end1="98" start2="57" end2="58" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="99" end1="100" start2="59" end2="60" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="104" end1="105" start2="64" end2="65" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="108" end1="109" start2="68" end2="69" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="110" end1="111" start2="70" end2="71" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="115" end1="142" start2="75" end2="75" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="143" end1="145" start2="76" end2="76" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="191" end1="192" start2="122" end2="123" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="195" end1="198" start2="126" end2="128" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="204" end1="205" start2="134" end2="134" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="232" end1="236" start2="161" end2="167" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="271" end1="273" start2="202" end2="204" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="275" end1="277" start2="206" end2="210" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="278" end1="279" start2="211" end2="212" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="280" end1="281" start2="213" end2="214" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="284" end1="289" start2="217" end2="229" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="292" end1="294" start2="232" end2="235" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="295" end1="296" start2="236" end2="237" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="297" end1="297" start2="238" end2="242" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="298" end1="298" start2="243" end2="244" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="300" end1="302" start2="246" end2="250" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="303" end1="304" start2="251" end2="253" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="306" end1="306" start2="255" end2="256" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="308" end1="310" start2="258" end2="268" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="313" end1="313" start2="271" end2="272" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="316" end1="320" start2="275" end2="285" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="357" end1="359" start2="322" end2="324" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="363" end1="366" start2="328" end2="338" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="367" end1="368" start2="339" end2="398" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="369" end1="369" start2="399" end2="450" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/assign08/SpellChecker.java">
+      <ranges>
+        <range start1="12" end1="14" start2="12" end2="14" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="53" end1="54" start2="53" end2="54" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="62" end1="63" start2="62" end2="63" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="75" end1="75" start2="75" end2="76" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="76" end1="79" start2="77" end2="83" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="87" end1="88" start2="91" end2="94" changelist="857abefd-5779-4780-942a-63b968f84b2e" />
+        <range start1="100" end1="101" start2="106" end2="106" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="107" end1="108" start2="112" end2="112" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="117" end1="118" start2="121" end2="121" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="123" end1="124" start2="126" end2="126" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="125" end1="126" start2="127" end2="127" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+        <range start1="130" end1="131" start2="131" end2="131" changelist="a5003b48-c4e4-4186-b3a9-ae6bf0bdd012" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -70,101 +156,136 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/exammakeup&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "OverrideImplement.generate.javadoc": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/CS2420-Assignments/src/assign10",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign10" />
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign09" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\exammakeup" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign06" />
-      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
-      <recent name="$PROJECT_DIR$/src/Assignment1" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign10" />
+      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign09" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign08" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign07" />
       <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src" />
-      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign04" />
-      <recent name="C:\Users\Owner\IdeaProjects\CS2420-Assignments\src\assign02" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assign10" />
+      <recent name="assign09" />
       <recent name="assign08" />
       <recent name="exammakeup" />
       <recent name="assign07" />
-      <recent name="assign06" />
-      <recent name="assign01" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.clear">
-    <configuration name="MedianTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTimer" />
+  <component name="RunManager" selected="JUnit.FindKLargestTest.findKLargestHeap">
+    <configuration name="BinaryMaxHeapTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exammakeup.*" />
+          <option name="PATTERN" value="assign10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTest.addAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assign08" />
-      <option name="MAIN_CLASS_NAME" value="assign08.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="addAll" />
+      <option name="PACKAGE_NAME" value="assign10" />
+      <option name="MAIN_CLASS_NAME" value="assign10.BinaryMaxHeapTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryMaxHeapTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420 Assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign08.*" />
+          <option name="PATTERN" value="assign10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assign08" />
-      <option name="MAIN_CLASS_NAME" value="assign08.BinarySearchTreeTest" />
+      <option name="PACKAGE_NAME" value="assign10" />
+      <option name="MAIN_CLASS_NAME" value="assign10.BinaryMaxHeapTest" />
       <option name="METHOD_NAME" value="clear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryMaxHeapTest.extractMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign10" />
+      <option name="MAIN_CLASS_NAME" value="assign10.BinaryMaxHeapTest" />
+      <option name="METHOD_NAME" value="extractMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryMaxHeapTest.size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign10" />
+      <option name="MAIN_CLASS_NAME" value="assign10.BinaryMaxHeapTest" />
+      <option name="METHOD_NAME" value="size" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindKLargestTest.findKLargestHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420 Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign10" />
+      <option name="MAIN_CLASS_NAME" value="assign10.FindKLargestTest" />
+      <option name="METHOD_NAME" value="findKLargestHeap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,45 +307,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MedianTest.medianLargeShuffled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exammakeup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exammakeup" />
-      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTest" />
-      <option name="METHOD_NAME" value="medianLargeShuffled" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MedianTest.medianSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2420 Assignments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exammakeup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exammakeup" />
-      <option name="MAIN_CLASS_NAME" value="exammakeup.MedianTest" />
-      <option name="METHOD_NAME" value="medianSmall" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BinarySearchTreeTest.clear" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.addAll" />
-        <item itemvalue="Application.MedianTimer" />
-        <item itemvalue="JUnit.MedianTest.medianLargeShuffled" />
-        <item itemvalue="JUnit.MedianTest.medianSmall" />
+        <item itemvalue="JUnit.FindKLargestTest.findKLargestHeap" />
+        <item itemvalue="JUnit.BinaryMaxHeapTest.clear" />
+        <item itemvalue="JUnit.BinaryMaxHeapTest.size" />
+        <item itemvalue="JUnit.BinaryMaxHeapTest.extractMax" />
+        <item itemvalue="JUnit.BinaryMaxHeapTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +362,17 @@
       <workItem from="1679285268799" duration="4000" />
       <workItem from="1679351269423" duration="1363000" />
       <workItem from="1679358224706" duration="467000" />
-      <workItem from="1679362446805" duration="8158000" />
+      <workItem from="1679362446805" duration="8343000" />
+      <workItem from="1679436629217" duration="1404000" />
+      <workItem from="1679530157559" duration="5545000" />
+      <workItem from="1679597865307" duration="3616000" />
+      <workItem from="1680470166450" duration="2236000" />
+      <workItem from="1680498798239" duration="120000" />
+      <workItem from="1680566718283" duration="4586000" />
+      <workItem from="1680651250374" duration="6412000" />
+      <workItem from="1680741600886" duration="5463000" />
+      <workItem from="1680816245648" duration="3750000" />
+      <workItem from="1681175024010" duration="10408000" />
     </task>
     <task id="LOCAL-00001" summary="added assignment 1">
       <created>1673448534373</created>
@@ -450,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679015685358</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added main logic, needs improvement on the remove method and spell check needs to be implemented">
+      <created>1679370734116</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1679370734116</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +592,8 @@
     <MESSAGE value="partially added. needs sorting method added. pathfinding implemented, needs testing." />
     <MESSAGE value="Final without the timer" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="Added main logic, needs improvement on the remove method and spell check needs to be implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main logic, needs improvement on the remove method and spell check needs to be implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -495,6 +602,16 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="9" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/assign10/BinaryMaxHeap.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/assign10/BinaryMaxHeap.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -506,6 +623,7 @@
         <watch expression="this" />
         <watch expression="listedTest.currentWebPG" />
         <watch expression="q" />
+        <watch expression="hashTable" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

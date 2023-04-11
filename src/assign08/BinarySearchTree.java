@@ -4,72 +4,33 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.NoSuchElementException;
 
+/**
+ * This class works as a Binary Search Tree that deals with generics that implement the Comparable interface
+ * and this class itself implements the SortedSet Interface.
+ * This works as a non-balanced BST with smaller values residing on the left side of the root node and
+ * bigger values residing on the right side of the root node all in relation to the root node's value.
+ *
+ * @param <Type> Generic Object that implements Comparable
+ * @author Philippe Gonzalez and Conner Francis
+ * @version March 22, 2023
+ */
 public class BinarySearchTree<Type extends Comparable<? super Type>> implements SortedSet<Type> {
-    public static class BinaryNode<T> {
-        private T data;
-        private BinaryNode<T> leftBinaryNode;
-        private BinaryNode<T> rightBinaryNode;
-
-        public BinaryNode(T nodeData, BinaryNode<T> leftNode, BinaryNode<T> rightNode) {
-            data = nodeData;
-            leftBinaryNode = leftNode;
-            rightBinaryNode = rightNode;
-        }
-
-        public BinaryNode(T nodeData) {
-            data = nodeData;
-            leftBinaryNode = null;
-            rightBinaryNode = null;
-        }
-
-        public BinaryNode<T> getRightBinaryNode() {
-            return rightBinaryNode;
-        }
-
-        public void setRightBinaryNode(BinaryNode<T> node) {
-            rightBinaryNode = node;
-        }
-
-        public BinaryNode<T> getLeftBinaryNode() {
-            return leftBinaryNode;
-        }
-
-        public void setLeftBinaryNode(BinaryNode<T> node) {
-            leftBinaryNode = node;
-        }
-
-        public T getData() {
-            return data;
-        }
-
-        public void setData(T item) {
-            data = item;
-        }
-
-        public BinaryNode<T> getRightmost() {
-            BinaryNode<T> current = this;
-            while (current.getRightBinaryNode() != null) {
-                current = current.getRightBinaryNode();
-            }
-            return current;
-        }
-
-        public BinaryNode<T> getLeftmost() {
-            BinaryNode<T> current = this;
-            while (current.getLeftBinaryNode() != null) {
-                current = current.getLeftBinaryNode();
-            }
-            return current;
-        }
-    }
-
     private BinaryNode<Type> rootNode;
-    private int treeSize;
-
+    private int treeSize; // amount of nodes
+    /**
+     * BinarySearchTree Constructor
+     * that creates a rootNode that is set to null (empty BinarySearchTree)
+     */
     public BinarySearchTree() {
         rootNode = null;
     }
 
+    /**
+     * BinarySearchTree Constructor
+     * that creates a rootNode that contains a data Type (singular noded BinarySearchTree)
+     *
+     * @param data of Generic Type that is contained within the rootNode
+     */
     public BinarySearchTree(Type data) {
         rootNode = new BinaryNode<>(data);
     }
@@ -93,53 +54,26 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
             return true;
         }
         // traverses the tree to find the location where the node should be
-        while(current != null) {
+        while (current != null) {
             previousNode = current;
-            if(current.getData().compareTo(newNode.getData()) > 0) {
+            if (current.getData().compareTo(newNode.getData()) > 0) {
                 current = current.getLeftBinaryNode();
-            }else{
+            } else {
                 current = current.getRightBinaryNode();
             }
         }
         // if tree contains the item already
-        if(previousNode.getData().equals(newNode.getData())) {
+        if (previousNode.getData().equals(newNode.getData())) {
             return false;
         }
         // compares it to the node it should be at to see if it is to the left or right
-        if(newNode.getData().compareTo(previousNode.getData()) > 0) {
+        if (newNode.getData().compareTo(previousNode.getData()) > 0) {
             previousNode.setRightBinaryNode(newNode);
-        }else{
+        } else {
             previousNode.setLeftBinaryNode(newNode);
         }
         treeSize++;
         return true;
-
-
-//        if (current.getData().compareTo(rootNode.getData()) > 0) {
-//            for (int i = 0; i < treeSize; i++) {
-//                if (next.getRightBinaryNode() == null || current.getData().compareTo(next.getRightBinaryNode().getData()) < 0) {
-//                    next.setRightBinaryNode(current);
-//                    return true;
-//                }
-//                if (next.getRightBinaryNode().getLeftBinaryNode() == null || current.getData().compareTo(next.getRightBinaryNode().getLeftBinaryNode().getData()) < 0) {
-//                    next.getRightBinaryNode().setLeftBinaryNode(current);
-//                    return true;
-//                }
-//                next = next.getRightBinaryNode();
-//            }
-//        } else if (current.getData().compareTo(rootNode.getData()) < 0) {
-//            for (int i = 0; i < treeSize; i++) {
-//                if (next.getLeftBinaryNode() == null || current.getData().compareTo(next.getLeftBinaryNode().getData()) < 0) {
-//                    next.setLeftBinaryNode(current);
-//                    return true;
-//                }
-//                if (next.getLeftBinaryNode().getRightBinaryNode() == null || current.getData().compareTo(next.getLeftBinaryNode().getRightBinaryNode().getData()) < 0) {
-//                    next.getLeftBinaryNode().setRightBinaryNode(current);
-//                    return true;
-//                }
-//                next = next.getLeftBinaryNode();
-//            }
-//        }
     }
 
 
@@ -189,20 +123,18 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
         }
         while (!item.equals(current.getData())) {
             if (item.compareTo(current.getData()) < 0) {
-                if (current.getLeftBinaryNode() != null) {
+                if (current.getLeftBinaryNode() == null) {
                     return false;
                 }
                 current = current.getLeftBinaryNode();
-            }
-            if (item.compareTo(current.getData()) > 0) {
-                if (current.getRightBinaryNode() != null) {
+            } else if (item.compareTo(current.getData()) > 0) {
+                if (current.getRightBinaryNode() == null) {
                     return false;
                 }
                 current = current.getRightBinaryNode();
             }
         }
         return true;
-
     }
 
     /**
@@ -230,10 +162,12 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public Type first() throws NoSuchElementException {
-        if (rootNode.getData().compareTo(rootNode.getLeftmost().getData()) < 0) {
-            return rootNode.getData();
-        }
-        return rootNode.getLeftmost().getData();
+        if (!isEmpty()) {
+            if (rootNode.getData().compareTo(rootNode.getLeftmost().getData()) < 0) {
+                return rootNode.getData();
+            }
+            return rootNode.getLeftmost().getData();
+        } else { throw new NoSuchElementException();}
     }
 
     /**
@@ -269,55 +203,88 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
      */
     @Override
     public boolean remove(Type item) {
-        BinaryNode<Type> nodeToBeRemov = new BinaryNode<>(item);
-        BinaryNode<Type> temp = new BinaryNode<>(rootNode.getData());
+        BinaryNode<Type> nodeToBeRemoved = new BinaryNode<>(item);
+        BinaryNode<Type> temp;
         BinaryNode<Type> current = rootNode;
         BinaryNode<Type> previousNode = rootNode;
-        // traverses the tree to find the location where the node should be
-        while(nodeToBeRemov != current) {
+        if (this.isEmpty() || !this.contains(item))
+            return false;
+        // traverses the tree to find the location where the successor is
+        while (nodeToBeRemoved.getData().compareTo(current.getData()) != 0) {
             previousNode = current;
-            if(current.getData().compareTo(nodeToBeRemov.getData()) > 0) {
+            if (current.getData().compareTo(nodeToBeRemoved.getData()) > 0) {
                 current = current.getLeftBinaryNode();
-            }else{
+            } else {
                 current = current.getRightBinaryNode();
             }
         }
-        // if tree contains the item already
-        if(current.getData().equals(nodeToBeRemov.getData())) {
-            if (current.getRightBinaryNode() != null && current.getLeftBinaryNode() != null) { // two children
-                temp = findSuccessor(current);
-                remove(temp.getData());
+        // if the node has been found
+        if (current.getData().equals(nodeToBeRemoved.getData())) {
+            // two children of the current node
+            if (current.getRightBinaryNode() != null && current.getLeftBinaryNode() != null) {
+                temp = findSuccessor(current); // find successor
+                remove(temp.getData()); // remove successor
+                temp.setLeftBinaryNode(current.getLeftBinaryNode()); //sets the successor's left and right node to the root's
+                temp.setRightBinaryNode(current.getRightBinaryNode());
+                current.setLeftBinaryNode(null);
+                current.setRightBinaryNode(null);
+                if (nodeToBeRemoved.getData().equals(rootNode.getData()))
+                    rootNode = temp;
                 current = temp;
                 return true;
             }
-            else if (current.getRightBinaryNode() != null && current.getLeftBinaryNode() == null) { // one child on the right
-                if (previousNode.getLeftBinaryNode() != null || previousNode.getLeftBinaryNode().equals(current))
+            // one child on the right of the current node
+            else if (current.getRightBinaryNode() != null && current.getLeftBinaryNode() == null) {
+                if (previousNode.getLeftBinaryNode() != null && previousNode.getLeftBinaryNode().equals(current))
                     previousNode.setLeftBinaryNode(current.getRightBinaryNode());
-                if (previousNode.getRightBinaryNode() != null || previousNode.getRightBinaryNode().equals(current))
+                if (previousNode.getRightBinaryNode() != null && previousNode.getRightBinaryNode().equals(current))
                     previousNode.setLeftBinaryNode(current.getRightBinaryNode());
+                if (previousNode.equals(current)) {
+                    rootNode = current.getRightBinaryNode();
+                    current.setRightBinaryNode(null);
+                }
                 current = null;
+                treeSize--;
                 return true;
             }
-            else if (current.getRightBinaryNode() == null && current.getLeftBinaryNode() != null) { // one child on the left
-                if (previousNode.getLeftBinaryNode() != null || previousNode.getLeftBinaryNode().equals(current))
+            // one child on the left of the current node
+            else if (current.getRightBinaryNode() == null && current.getLeftBinaryNode() != null) {
+                //if the current node was on the left of the previous node
+                if (previousNode.getLeftBinaryNode() != null && previousNode.getLeftBinaryNode().equals(current))
                     previousNode.setLeftBinaryNode(current.getLeftBinaryNode());
                 if (previousNode.getRightBinaryNode() != null || previousNode.getRightBinaryNode().equals(current))
                     previousNode.setLeftBinaryNode(current.getLeftBinaryNode());
                 current = null;
+                treeSize--;
                 return true;
             }
-            else { //no children
-                current = null;
+            //no children of the current node
+            else {
+                //
+                if (previousNode.getLeftBinaryNode() != null && previousNode.getLeftBinaryNode().getData().equals(current.getData()))
+                    previousNode.setLeftBinaryNode(null);
+                if (previousNode.getRightBinaryNode() != null && previousNode.getRightBinaryNode().getData().equals(current.getData()))
+                    previousNode.setRightBinaryNode(null);
+                if(current.equals(previousNode))
+                    rootNode = null;
+                treeSize--;
                 return true;
             }
         }
+        // if node has not been found and nothing was removed
         return false;
     }
 
-    private BinaryNode<Type> findSuccessor(BinaryNode<Type> current){
-        if (current.getRightBinaryNode() != null)
-            return current.getLeftmost();
-        return null;
+    /**
+     * The successor of the current node will always be on the left and whatever
+     * the right most node of it. (when this is called there is two children and the bigger value will be
+     * on the right of the current node which makes it the successor)
+     *
+     * @param current node to find a successor for
+     * @return current node's leftBinaryNode's most right node
+     */
+    private BinaryNode<Type> findSuccessor(BinaryNode<Type> current) {
+        return current.getLeftBinaryNode().getRightmost();
     }
 
     /**
@@ -355,18 +322,134 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
     @Override
     public ArrayList<Type> toArrayList() {
         ArrayList<Type> sorted = new ArrayList<>();
-        if(rootNode != null) {
-            recArrayList(sorted,rootNode);
+        if (rootNode != null) {
+            recArrayList(sorted, rootNode);
         }
         return sorted;
     }
 
-    private void recArrayList(ArrayList<Type> arr,BinaryNode<Type> currentNode) {
-        if(currentNode != null) {
-            recArrayList(arr,currentNode.getLeftBinaryNode());
+    /**
+     * recursive search for adding into an array. Order can be changed by moving the recursive calls within the method.
+     *
+     * @param arr         array to add to
+     * @param currentNode current node for recursive function to use
+     */
+    private void recArrayList(ArrayList<Type> arr, BinaryNode<Type> currentNode) {
+        if (currentNode != null) {
+            // adds the smallest items first
+            recArrayList(arr, currentNode.getLeftBinaryNode());
             arr.add(currentNode.getData());
-            recArrayList(arr,currentNode.getRightBinaryNode());
+            recArrayList(arr, currentNode.getRightBinaryNode());
+        }
+    }
 
+    /**
+     * BinaryNode Class that resides within the BinarySearch Tree Class and a BinaryNode
+     * holds a data type, reference to a LeftBinaryNode and RightBinaryNode
+     *
+     * @param <T> Generic Object Type
+     */
+    public static class BinaryNode<T> {
+        private T data;
+        private BinaryNode<T> leftBinaryNode;
+        private BinaryNode<T> rightBinaryNode;
+
+        /**
+         * BinaryNode Constructor with parameters
+         *
+         * @param nodeData  the data this Binary Node will store (int, String, double,...etc (any data type))
+         * @param leftNode  left Binary Node of this Binary Node
+         * @param rightNode right Binary Node of this Binary Node
+         */
+        public BinaryNode(T nodeData, BinaryNode<T> leftNode, BinaryNode<T> rightNode) {
+            data = nodeData;
+            leftBinaryNode = leftNode;
+            rightBinaryNode = rightNode;
+        }
+
+        /**
+         * BinaryNode Constructor with one parameter
+         *
+         * @param nodeData The data type/just data that this BinaryNode created will store
+         */
+        public BinaryNode(T nodeData) {
+            data = nodeData;
+            leftBinaryNode = null;
+            rightBinaryNode = null;
+        }
+
+        /**
+         * @return the right BinaryNode of this node
+         */
+        public BinaryNode<T> getRightBinaryNode() {
+            return rightBinaryNode;
+        }
+
+        /**
+         * sets the right BinaryNode of this node
+         */
+        public void setRightBinaryNode(BinaryNode<T> node) {
+            rightBinaryNode = node;
+        }
+
+        /**
+         * @return the left BinaryNode of this node
+         */
+        public BinaryNode<T> getLeftBinaryNode() {
+            return leftBinaryNode;
+        }
+
+        /**
+         * sets the left BinaryNode of this node
+         */
+        public void setLeftBinaryNode(BinaryNode<T> node) {
+            leftBinaryNode = node;
+        }
+
+        /**
+         * @return the data of this node
+         */
+        public T getData() {
+            return data;
+        }
+
+        /**
+         * sets the data of this node
+         *
+         * @param item of Generic type attached to this node (gonna be the data of this node)
+         */
+        public void setData(T item) {
+            data = item;
+        }
+
+        /**
+         * loop through the right side of the nodes from this node (current node)
+         * and when the right side of the current node is null just
+         * return the current node
+         *
+         * @return the right most node in reference to this node
+         */
+        public BinaryNode<T> getRightmost() {
+            BinaryNode<T> current = this;
+            while (current.getRightBinaryNode() != null) {
+                current = current.getRightBinaryNode();
+            }
+            return current;
+        }
+
+        /**
+         * loop through the left side of the nodes from this node (current node)
+         * and when the left side of the current node is null just
+         * return the current node
+         *
+         * @return the left most node in reference to this node
+         */
+        public BinaryNode<T> getLeftmost() {
+            BinaryNode<T> current = this;
+            while (current.getLeftBinaryNode() != null) {
+                current = current.getLeftBinaryNode();
+            }
+            return current;
         }
     }
 
